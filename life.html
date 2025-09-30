@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="芝浦工業大学柏中学高等学校の学校生活。1日のタイムスケジュール、部活動、制服、通学方法など、芝柏生の充実したキャンパスライフを詳しく紹介します。" />
+    <title>学校生活｜芝柏ライフ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/site.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-lg">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 min-h-[64px]">
+        <a
+          href="index.html"
+          class="site-logo flex items-center gap-2 text-sm font-semibold tracking-[0.25em] text-slate-700 uppercase"
+        >
+          <span>芝柏ライフ</span>
+        </a>
+        <nav
+          class="hidden md:inline-flex gap-6 text-[0.95rem] font-semibold text-slate-600"
+          aria-label="メインメニュー"
+        >
+          <a href="about.html" class="transition hover:text-sky-600">学校概要</a>
+          <a href="life.html" class="transition hover:text-sky-600">学校生活</a>
+          <a href="events.html" class="transition hover:text-sky-600">行事</a>
+          <a href="facilities.html" class="transition hover:text-sky-600">施設</a>
+          <a href="media.html" class="transition hover:text-sky-600">動画</a>
+        </nav>
+        <button
+          class="md:hidden mt-1.5 inline-flex items-center justify-center rounded-full text-slate-800 p-2 text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[90] hidden" aria-hidden="true">
+      <div class="menu-overlay absolute inset-0 bg-slate-900/70" data-menu-overlay></div>
+      <nav
+        class="absolute inset-x-4 top-6 rounded-3xl bg-white px-5 pb-10 pt-5 shadow-2xl"
+        role="dialog"
+        aria-modal="true"
+        data-menu-panel
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-semibold tracking-[0.2em] text-slate-500">MENU</span>
+          <button
+            class="rounded-full border border-slate-300 p-2 text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+            aria-label="メニューを閉じる"
+            data-menu-close
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M4.22 4.22a.75.75 0 0 1 1.06 0L10 8.94l4.72-4.72a.75.75 0 1 1 1.06 1.06L11.06 10l4.72 4.72a.75.75 0 1 1-1.06 1.06L10 11.06l-4.72 4.72a.75.75 0 0 1-1.06-1.06L8.94 10 4.22 5.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="mt-6 flex flex-col gap-3 text-base font-semibold text-slate-800">
+          <li>
+            <a href="index.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+              >トップページ</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+              >学校概要</a
+            >
+          </li>
+          <li>
+            <a href="life.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+              >学校生活</a
+            >
+          </li>
+          <li>
+            <a href="events.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">行事</a>
+          </li>
+          <li>
+            <a href="facilities.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+              >施設</a
+            >
+          </li>
+          <li>
+            <a href="media.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">動画</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- ヘッダーの高さ分のpadding-topを追加 -->
+    <main class="pt-16">
+      <section class="relative overflow-hidden bg-orange-50 py-20">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-10 md:grid-cols-[1fr,0.5fr] md:items-center">
+            <div class="space-y-6">
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-orange-600 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-white shadow"
+              >
+                Schoole Life
+              </span>
+              <h1 class="text-3xl font-black leading-tight text-slate-900 sm:text-5xl">勉強も青春も、全力</h1>
+              <p class="text-lg leading-relaxed text-slate-600">
+                最先端の理系教育と活発な部活動が共存する芝柏。厳しくも温かい環境で、仲間とともに成長する6年間の物語をお届けします。
+              </p>
+            </div>
+            <div class="rounded-3xl border border-orange-300 bg-white/80 p-6 shadow-sm shadow-orange-100">
+              <p class="text-sm uppercase tracking-[0.2em] text-cyan-600">Index</p>
+              <ol class="mt-4 space-y-3 text-sm text-slate-600">
+                <li>
+                  <a href="#classes" class="hover:text-cyan-600 transition">1. 授業スタイル（主要5教科／副教科）</a>
+                </li>
+                <li><a href="#clubs" class="hover:text-cyan-600 transition">2. 部活動（運動部／文化部）</a></li>
+                <li><a href="#uniform" class="hover:text-cyan-600 transition">3. 制服</a></li>
+                <li><a href="#culture" class="hover:text-cyan-600 transition">4. 教員・校則・校歌</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 授業スタイル -->
+      <section id="classes" class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-10 lg:grid-cols-[0.4fr,1fr]">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900">授業スタイル</h2>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">CLASS STYLE</p>
+          </div>
+          <div class="space-y-8">
+            <!-- キャッチコピー -->
+            <p class="text-base leading-7 text-slate-700">
+              芝柏では理系色の強い授業を通じて、未来の科学者を育てています。
+            </p>
+            <!-- 主要5教科 -->
+            <article class="grid gap-6 lg:grid-cols-2">
+              <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-slate-900">主要5教科</h3>
+                <p class="text-base leading-7 text-slate-600">
+                  一週間の数学の授業コマが多いです。高入生は、進度が早いので頑張りましょう。英語は、日本語のない教科書はじめは驚きますが、段々と慣れていきます。
+                </p>
+              </div>
+              <div class="w-full max-w-md mx-auto lg:mx-0">
+                <img
+                  src="https://picsum.photos/600/450?random=21"
+                  alt="主要5教科"
+                  class="aspect-[4/3] w-full rounded-2xl object-cover"
+                />
+              </div>
+            </article>
+
+            <!-- 副教科 -->
+            <article class="grid gap-6 lg:grid-cols-2">
+              <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-slate-900">副教科</h3>
+                <p class="text-base leading-7 text-slate-600">
+                  体育は4組合同、芸術科目は2組合同で行われるため、クラスを超えた交流ができる珍しい授業です。高校1年生は、「書道」「音楽」「美術」から芸術科目を選択します。自分の能力次第で、一週間の楽しみなるほど楽しい授業なので、科目選択は慎重に行うことをお勧めします！
+                </p>
+              </div>
+              <div class="w-full max-w-md mx-auto lg:mx-0">
+                <img
+                  src="https://picsum.photos/600/450?random=22"
+                  alt="副教科"
+                  class="aspect-[4/3] w-full rounded-2xl object-cover"
+                />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 部活動 -->
+      <section id="clubs" class="bg-gradient-to-br from-slate-50 to-white py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-10 lg:grid-cols-[0.4fr,1fr]">
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">部活動</h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">CLUB ACTIVITIES</p>
+            </div>
+            <div class="space-y-6">
+              <!-- キャッチコピー -->
+              <p class="text-base leading-7 text-slate-700">
+                文武両道を実現し、個性豊かな部活動で青春を謳歌しています。
+              </p>
+              <!-- 運動部 -->
+              <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <details class="group">
+                  <summary
+                    class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900"
+                  >
+                    運動部
+                    <span class="ml-2 text-sm text-cyan-600 transition-transform group-open:rotate-180">▼</span>
+                  </summary>
+                  <div class="mt-4 grid gap-2 text-sm text-slate-600 md:grid-cols-2">
+                    <ul class="space-y-1">
+                      <li>・ラグビー部</li>
+                      <li>・バレーボール部（女子）</li>
+                      <li>・サッカー部</li>
+                      <li>・バスケットボール部</li>
+                      <li>・野球部（男子）</li>
+                      <li>・ソフトテニス部</li>
+                      <li>・水泳部</li>
+                    </ul>
+                    <ul class="space-y-1">
+                      <li>・弓道部</li>
+                      <li>・剣道部</li>
+                      <li>・陸上競技部（マネ有）</li>
+                      <li>・ハンドボール部</li>
+                      <li>・バドミントン部</li>
+                      <li>・ダンス部（女子）</li>
+                      <li>・卓球部</li>
+                      <li>・硬式テニスサークル <span class="text-xs text-cyan-600">NEW</span></li>
+                    </ul>
+                  </div>
+                </details>
+              </article>
+
+              <!-- 文化部 -->
+              <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <details class="group">
+                  <summary
+                    class="flex cursor-pointer items-center justify-between text-lg font-semibold text-slate-900"
+                  >
+                    文化部
+                    <span class="ml-2 text-sm text-cyan-600 transition-transform group-open:rotate-180">▼</span>
+                  </summary>
+                  <div class="mt-4 grid gap-2 text-sm text-slate-600 md:grid-cols-2">
+                    <ul class="space-y-1">
+                      <li>・吹奏楽部</li>
+                      <li>・茶道部</li>
+                      <li>・囲碁将棋部</li>
+                      <li>・演劇部</li>
+                      <li>・美術部</li>
+                      <li>・科学部</li>
+                      <li>・英語部</li>
+                      <li>・軽音楽部 <span class="text-xs text-orange-600">人気</span></li>
+                    </ul>
+                    <ul class="space-y-1">
+                      <li>・コンピューター部</li>
+                      <li>・数学研究部</li>
+                      <li>・文芸サークル</li>
+                      <li>・模型サークル</li>
+                      <li>・書道サークル</li>
+                      <li>・クイズ研究サークル</li>
+                      <li>・アントレプレナーシップサークル <span class="text-xs text-cyan-600">NEW</span></li>
+                    </ul>
+                  </div>
+                </details>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 制服 -->
+      <section id="uniform" class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-10 lg:grid-cols-[0.4fr,1fr]">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900">制服</h2>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">UNIFORM</p>
+          </div>
+          <div class="space-y-6">
+            <!-- キャッチコピー -->
+            <p class="text-base leading-7 text-slate-700">品格と機能性を兼ね備えた制服が、芝柏生の誇りです。</p>
+            <div class="grid gap-6 md:grid-cols-2">
+              <div class="w-full max-w-md mx-auto lg:mx-0">
+                <div class="rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src="https://picsum.photos/600/450?random=23"
+                    alt="制服（夏服）"
+                    class="aspect-[4/3] w-full object-cover"
+                  />
+                  <div class="bg-white p-4">
+                    <p class="text-sm font-semibold text-slate-800">夏服</p>
+                    <p class="text-xs text-slate-600 mt-1">涼しく快適な夏服デザイン</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full max-w-md mx-auto lg:mx-0">
+                <div class="rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src="https://picsum.photos/600/450?random=24"
+                    alt="制服（冬服）"
+                    class="aspect-[4/3] w-full object-cover"
+                  />
+                  <div class="bg-white p-4">
+                    <p class="text-sm font-semibold text-slate-800">冬服</p>
+                    <p class="text-xs text-slate-600 mt-1">伝統的な紺色の冬服</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 教員・校則・校歌 -->
+      <section id="culture" class="bg-gradient-to-br from-cyan-50 to-white py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-10 lg:grid-cols-[0.4fr,1fr]">
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">学校文化</h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">SCHOOL CULTURE</p>
+            </div>
+            <div class="space-y-6">
+              <!-- キャッチコピー -->
+              <p class="text-base leading-7 text-slate-700">厳しくも温かい環境が、芝柏独自の学校文化を育んでいます。</p>
+              <!-- 教員 -->
+              <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-900">教員</h3>
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                  芝柏の先生ということもあって教え方はわかりやすい。しかし、独特な先生も多いため変わった教え方をする時がある。その時、先生の気持ちになってちゃんと聞いていないと突然意味が分からなくなってしまう生徒が一定数いる。ここが授業に追いつけるかの分かれ目となっている。
+                </p>
+                <p class="mt-2 text-sm leading-7 text-slate-600">
+                  また、授業中に飲み物を飲むと注意する先生がいる。先生方に失礼となってしまうため気を付けるべき。特に高校からの外部進学生は中学校で「勝手に飲んでいいよ」と言われてきた学校が多いため注意したほうがいい。先生は特徴的だが、みな生徒への対応は手厚く面白いため授業に飽きることはないだろう。
+                </p>
+              </article>
+
+              <!-- 校則 -->
+              <article
+                class="rounded-3xl border border-slate-200 bg-gradient-to-br from-yellow-50 to-white p-6 shadow-sm"
+              >
+                <h3 class="text-lg font-semibold text-slate-900">校則</h3>
+                <p class="mt-3 text-sm font-semibold text-slate-700">主なできないこと：</p>
+                <ul class="mt-2 space-y-1 text-sm text-slate-600">
+                  <li>・スカートを折る（物理的に折れない設計）</li>
+                  <li>・髪染め</li>
+                  <li>・ピアス</li>
+                  <li>・メイク（入学のしおりにも生徒手帳にも公式HPにも書いていないから注意！）</li>
+                  <li>・ハンディファン使用</li>
+                  <li>・駅から徒歩</li>
+                  <li>・アルバイト</li>
+                </ul>
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                  細かいことはほかにもあるが基本的に生徒手帳や芝柏HPを見るといい。しかし、どこにも書いていないのに存在している暗黙の校則があるため、それらは入学して注意されながら知っていくといい。
+                </p>
+              </article>
+
+              <!-- 校歌 -->
+              <article class="rounded-3xl border border-cyan-200 bg-gradient-to-br from-cyan-50 to-white p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-900">校歌</h3>
+                <div class="mt-3 space-y-3">
+                  <div class="rounded-lg bg-white p-4 border border-cyan-100">
+                    <p class="text-sm font-semibold text-cyan-700">「毎日が喜び」</p>
+                    <p class="text-xs text-slate-600 mt-1">作詞・作曲：小椋佳</p>
+                  </div>
+                  <p class="text-sm leading-7 text-slate-600">
+                    高校創立10周年の際に、生徒のアンケートをもとに作詞された。『柏の青春』という歌詞があるため、みんな狭い範囲の中頑張って青春をしようと頑張っている。まれに留学先で青春をする生徒もいる。
+                  </p>
+                  <p class="text-sm leading-7 text-slate-600">
+                    リズムはとても特徴的で頭に残る。歌詞に関しては芸術科目が音楽選択の人は自然と覚えるが、そのほかの生徒はあまり覚えられない。学園歌があるみたいだが、どの場面で歌われるのかはまだわからない。
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between"
+      >
+        <p>© 2025 Shibaura Institute of Technology Kashiwa.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+node_modules
+
+# ai 
+AGENTS.md
+CLAUDE.md
+
+.claude
+.serena
+
+# git
+.git

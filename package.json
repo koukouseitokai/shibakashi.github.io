@@ -1,0 +1,13 @@
+{
+  "name": "shibakashi-hp",
+  "version": "1.0.0",
+  "description": "芝浦工業大学柏中学高等学校 学校紹介サイト",
+  "scripts": {
+    "format": "prettier --write \"**/*.{html,css,js,json}\"",
+    "check": "prettier --check \"**/*.{html,css,js,json}\"",
+    "fix": "prettier --write \"**/*.{html,css,js,json}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}

@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="芝浦工業大学柏中学高等学校の増穂祭（文化祭）特集ページ。部活動の発表、クラス企画、実行委員会の活動など、芝柏最大のイベントを詳しく紹介します。" />
+    <title>増穂祭特集｜芝柏ライフ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      @keyframes scroll-horizontal {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .festival-auto-scroll {
+        animation: scroll-horizontal 20s linear infinite;
+        display: inline-flex;
+      }
+      .festival-auto-scroll:hover {
+        animation-play-state: paused;
+      }
+      .club-list {
+        column-count: 2;
+        column-gap: 2rem;
+      }
+      @media (max-width: 768px) {
+        .club-list {
+          column-count: 1;
+        }
+      }
+    </style>
+    <script src="js/site.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-lg">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 min-h-[64px]">
+        <a
+          href="index.html"
+          class="site-logo flex items-center gap-2 text-sm font-semibold tracking-[0.25em] text-slate-700 uppercase"
+        >
+          <span>芝柏ライフ</span>
+        </a>
+        <nav
+          class="hidden md:inline-flex gap-6 text-[0.95rem] font-semibold text-slate-600"
+          aria-label="メインメニュー"
+        >
+          <a href="about.html" class="transition hover:text-sky-600">学校概要</a>
+          <a href="life.html" class="transition hover:text-sky-600">学校生活</a>
+          <a href="events.html" class="transition hover:text-sky-600">行事</a>
+          <a href="facilities.html" class="transition hover:text-sky-600">施設</a>
+          <a href="media.html" class="transition hover:text-sky-600">動画</a>
+        </nav>
+        <button
+          class="md:hidden mt-1.5 inline-flex items-center justify-center rounded-full text-slate-800 p-2 text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[90] hidden" aria-hidden="true">
+      <div class="menu-overlay absolute inset-0 bg-slate-900/70" data-menu-overlay></div>
+      <nav
+        class="absolute inset-x-4 top-6 rounded-3xl bg-white px-5 pb-10 pt-5 shadow-2xl"
+        role="dialog"
+        aria-modal="true"
+        data-menu-panel
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-semibold tracking-[0.2em] text-slate-500">MENU</span>
+          <button
+            class="rounded-full border border-slate-300 p-2 text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+            aria-label="メニューを閉じる"
+            data-menu-close
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M4.22 4.22a.75.75 0 0 1 1.06 0L10 8.94l4.72-4.72a.75.75 0 1 1 1.06 1.06L11.06 10l4.72 4.72a.75.75 0 1 1-1.06 1.06L10 11.06l-4.72 4.72a.75.75 0 0 1-1.06-1.06L8.94 10 4.22 5.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="mt-6 flex flex-col gap-3 text-base font-semibold text-slate-800">
+          <li>
+            <a href="index.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+              >トップページ</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+              >学校概要</a
+            >
+          </li>
+          <li>
+            <a href="life.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+              >学校生活</a
+            >
+          </li>
+          <li>
+            <a href="events.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">行事</a>
+          </li>
+          <li>
+            <a href="facilities.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+              >施設</a
+            >
+          </li>
+          <li>
+            <a href="media.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">動画</a>
+          </li>
+          <li>
+            <a href="masuhofes.html" class="block rounded-2xl bg-pink-100 px-4 py-3 transition hover:bg-pink-200"
+              >増穂祭</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="pt-16">
+      <!-- ヒーローセクション -->
+      <section class="relative overflow-hidden bg-gradient-to-r from-cyan-600 to-indigo-600 py-20">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="relative z-10">
+            <div class="grid gap-10 md:grid-cols-[1fr,0.5fr] md:items-center">
+              <div class="space-y-6 text-white">
+                <span
+                  class="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-white shadow backdrop-blur-sm"
+                >
+                  Special Feature
+                </span>
+                <h1 class="text-3xl font-black leading-tight sm:text-5xl">増穂祭特集</h1>
+                <p class="text-lg leading-relaxed text-white/90">
+                  芝柏の文化祭「増穂祭」の魅力を余すことなくお届け。準備から当日まで、生徒たちの熱い想いが詰まった2日間の記録。
+                </p>
+              </div>
+              <div class="rounded-3xl border border-white/20 bg-white/10 p-6 shadow-xl backdrop-blur-sm">
+                <p class="text-sm uppercase tracking-[0.2em] text-white/90">Contents</p>
+                <ol class="mt-4 space-y-3 text-sm text-white/80">
+                  <li><a href="#preparation" class="hover:text-white transition">1. 増穂祭準備</a></li>
+                  <li><a href="#opening" class="hover:text-white transition">2. オープニングセレモニー</a></li>
+                  <li><a href="#mss" class="hover:text-white transition">3. MSS</a></li>
+                  <li><a href="#activities" class="hover:text-white transition">4. クラス企画・部活企画</a></li>
+                  <li><a href="#ending" class="hover:text-white transition">5. エンディングセレモニー</a></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 増穂祭準備セクション -->
+      <section id="preparation" class="bg-slate-900 py-16 text-slate-50 overflow-hidden">
+        <div class="mx-auto max-w-6xl px-4">
+          <div>
+            <h2 class="text-4xl font-bold">準備</h2>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-300">Preparation</p>
+          </div>
+
+          <!-- 横自動スクロール -->
+          <div class="mt-12 relative overflow-hidden">
+            <div class="festival-auto-scroll">
+              <!-- 写真セット1 -->
+              <div class="flex gap-6 px-3">
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=101"
+                    alt="準備風景1"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">展示物の制作に取り組む生徒たち</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=102"
+                    alt="準備風景2"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">装飾の準備を進める実行委員</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=103"
+                    alt="準備風景3"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">リハーサルを行うパフォーマンスチーム</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=104"
+                    alt="準備風景4"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">クラス企画の打ち合わせ</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=105"
+                    alt="準備風景5"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">看板制作に励む美術部</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=106"
+                    alt="準備風景6"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">体育館の装飾準備</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=107"
+                    alt="準備風景7"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">前日の最終確認</p>
+                </div>
+              </div>
+              <!-- 写真セット2（ループ用） -->
+              <div class="flex gap-6 px-3">
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=101"
+                    alt="準備風景1"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">展示物の制作に取り組む生徒たち</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=102"
+                    alt="準備風景2"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">装飾の準備を進める実行委員</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=103"
+                    alt="準備風景3"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">リハーサルを行うパフォーマンスチーム</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=104"
+                    alt="準備風景4"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">クラス企画の打ち合わせ</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=105"
+                    alt="準備風景5"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">看板制作に励む美術部</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=106"
+                    alt="準備風景6"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">体育館の装飾準備</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=107"
+                    alt="準備風景7"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">前日の最終確認</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 増穂祭当日 -->
+      <section class="py-16 bg-white">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 lg:grid-cols-[0.3fr,1fr]">
+            <div>
+              <h2
+                class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-cyan-600 leading-none"
+              >
+                当日
+              </h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">Festival Day</p>
+            </div>
+            <div class="space-y-8">
+              <!-- オープニングセレモニー -->
+              <article id="opening" class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">オープニングセレモニー</h3>
+                  <p class="text-sm font-semibold text-cyan-600">Opening</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    オープニングは一般客来場開始前に行われるため、残念ながら生徒以外は参加することができない。しかし、運良くというべきか運悪くというべきか芝柏に入学した君は、これから始まる増穂祭に心を躍らせながらこのオープニングに参加しよう。大体育館に施される手の込んだ装飾は壮観だ。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/400?random=201"
+                    alt="オープニングセレモニー"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+
+              <!-- MSS -->
+              <article id="mss" class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">MSS</h3>
+                  <p class="text-sm font-semibold text-purple-600">Masuo Show Stage</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    毎年盛り上がる、大人気企画Mステ！今年度からは名称を改めMSSとして行われる。昨年は来場者投票でダンスグループ「diva」が優勝を果たした。優勝したチームは、エンディングセレモニーでの特別公演が行われる。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/400?random=202"
+                    alt="MSS"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+
+              <!-- クラス企画 -->
+              <article id="activities" class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">クラス企画</h3>
+                  <p class="text-sm font-semibold text-yellow-600">Class</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    高校1.2年生が各クラスごとに企画を行う。あつあつなたこ焼きや、クレープなど、どの食品も絶品であるが故に、非常に混雑する。他にもトロッコやお化け屋敷など幅広いジャンルのアトラクションが体験可能。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/400?random=203"
+                    alt="クラス企画"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+
+              <!-- 部活企画 -->
+              <article>
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">部活企画</h3>
+                  <p class="text-sm font-semibold text-cyan-600 mb-2">Club Activities</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    各部活動が趣向を凝らした企画で増穂祭を盛り上げます。体験型から展示・公演まで、多彩なプログラムをお楽しみください。
+                  </p>
+
+                  <!-- 部活カードグリッド -->
+                  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-6">
+                    <!-- 軽音部 -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <h4 class="text-base font-bold text-slate-900 mb-2">軽音部</h4>
+                      <p class="text-sm text-slate-600 leading-6">
+                        音楽室や大体育館で安直にライブをやっている。そこそこ盛り上がるが、音響が微妙。興味があれば軽音部の人に伝えよう！ちゃんとした場所でやってる冬ライブに誘ってくれるぞ！！
+                      </p>
+                    </div>
+
+                    <!-- 科学部 -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <h4 class="text-base font-bold text-slate-900 mb-2">科学部</h4>
+                      <p class="text-sm text-slate-600 leading-6">
+                        文系の中の人には理論や仕組みが全くわからん怪しげななにかを錬成している。多分黒魔術の類だろう。
+                      </p>
+                    </div>
+
+                    <!-- 野球部 -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <h4 class="text-base font-bold text-slate-900 mb-2">野球部</h4>
+                      <p class="text-sm text-slate-600 leading-6">
+                        ボールを投げて速ければ景品GETという企画を行っており、なかなか興味を惹かれる企画ではあるが、実は速い球を投げられる生徒を見つけて勧誘するための罠である。
+                      </p>
+                    </div>
+
+                    <!-- サッカー部 -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <h4 class="text-base font-bold text-slate-900 mb-2">サッカー部</h4>
+                      <p class="text-sm text-slate-600 leading-6">公開試合をやっている。</p>
+                    </div>
+
+                    <!-- 水球部 -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <h4 class="text-base font-bold text-slate-900 mb-2">水球部</h4>
+                      <p class="text-sm text-slate-600 leading-6">
+                        OBと現役生の迫真の公開試合を見ることができる。皆も水泳部の気合の入った叫び声を聞きにいこう！
+                      </p>
+                    </div>
+
+                    <!-- 弓道部 -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <h4 class="text-base font-bold text-slate-900 mb-2">弓道部</h4>
+                      <p class="text-sm text-slate-600 leading-6">
+                        弓を体験させてくれる。モンハンの弓使いはぜひやってみることをお勧めしたい。弓を触る前の基礎練習で音を上げないように。
+                      </p>
+                    </div>
+
+                    <!-- 演劇部 -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <h4 class="text-base font-bold text-slate-900 mb-2">演劇部</h4>
+                      <p class="text-sm text-slate-600 leading-6">
+                        シナリオや演出に趣向を凝らし、部員が自らの手で創りあげた劇を間近で観ることができる。
+                      </p>
+                    </div>
+
+                    <!-- 鉄道研究部 -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <h4 class="text-base font-bold text-slate-900 mb-2">鉄道研究部</h4>
+                      <p class="text-sm text-slate-600 leading-6">
+                        鉄道模型の展示のみならず、ジオラマ制作や実際に乗ることができる。細部までこだわられた模型は一見の価値ありだ。
+                      </p>
+                    </div>
+
+                    <!-- 吹奏楽部 -->
+                    <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <h4 class="text-base font-bold text-slate-900 mb-2">吹奏楽部</h4>
+                      <p class="text-sm text-slate-600 leading-6">迫力ある演奏で会場を盛り上げる！</p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- エンディングセレモニー -->
+              <article id="ending" class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">エンディングセレモニー</h3>
+                  <p class="text-sm font-semibold text-cyan-600">Ending</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    こちらもオープニングと同じく生徒以外は参加できないが、司会のトークを中心に文化祭の締めくくりにふさわしい楽しみを味わえる。また、エンディング拡張と呼ばれる後夜祭的なイベントでは、'24年度は軽音部のライブをはじめ、ダンスメドレーやMステ優勝チームの特別公演を行い大いに盛り上がった。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/400?random=205"
+                    alt="エンディングセレモニー"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between"
+      >
+        <p>© 2025 Shibaura Institute of Technology Kashiwa.</p>
+      </div>
+    </footer>
+  </body>
+</html>

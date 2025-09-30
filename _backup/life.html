@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>学校生活｜芝浦工業大学柏中学高等学校 増穂祭サイト</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        font-feature-settings: "palt";
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header class="sticky top-0 z-50 bg-slate-50/80 backdrop-blur border-b border-slate-200">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="text-2xl font-bold text-sky-500">Masuo Fes</span>
+        </a>
+        <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-600 md:flex">
+          <a href="about.html" class="transition hover:text-sky-600">学校概要</a>
+          <a href="life.html" class="transition hover:text-sky-600">学校生活</a>
+          <a href="events.html" class="transition hover:text-sky-600">行事</a>
+          <a href="facilities.html" class="transition hover:text-sky-600">施設</a>
+          <a href="media.html" class="transition hover:text-sky-600">動画</a>
+        </nav>
+        <button
+          class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-sky-400 hover:text-sky-500 md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          メニュー
+        </button>
+      </div>
+      <div id="mobile-menu" class="fixed inset-0 z-40 hidden md:hidden" aria-hidden="true">
+        <div class="absolute inset-0 bg-slate-900/50" data-menu-overlay></div>
+        <nav
+          class="absolute inset-x-4 top-4 rounded-3xl bg-white px-5 pb-10 pt-20 shadow-2xl"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-bold text-sky-500">Moshio Fes</span>
+            <button
+              class="rounded-full border border-slate-300 p-2 text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+              aria-label="メニューを閉じる"
+              data-menu-close
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M4.22 4.22a.75.75 0 0 1 1.06 0L10 8.94l4.72-4.72a.75.75 0 1 1 1.06 1.06L11.06 10l4.72 4.72a.75.75 0 1 1-1.06 1.06L10 11.06l-4.72 4.72a.75.75 0 0 1-1.06-1.06L8.94 10 4.22 5.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <ul class="mt-8 flex flex-col gap-3 text-base font-semibold text-slate-800">
+            <li>
+              <a href="about.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >学校概要</a
+              >
+            </li>
+            <li>
+              <a href="life.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >学校生活</a
+              >
+            </li>
+            <li>
+              <a href="events.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >行事</a
+              >
+            </li>
+            <li>
+              <a href="facilities.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >施設</a
+              >
+            </li>
+            <li>
+              <a href="media.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">動画</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden bg-gradient-to-br from-yellow-100 via-white to-sky-100 py-20">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-10 lg:grid-cols-[0.45fr,1fr] lg:items-center">
+            <div class="space-y-6">
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-white"
+              >
+                Campus Life
+              </span>
+              <h1 class="text-3xl font-black leading-tight text-slate-900 sm:text-5xl">
+                授業・部活・校則から、芝柏生のリアルな日常へ
+              </h1>
+              <p class="text-lg leading-relaxed text-slate-600">
+                サイトマップの各小項目に合わせて、実際の声や写真を埋め込める構成を用意しました。後から細かな記事やギャラリーを追加できます。
+              </p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-xl shadow-sky-100/60">
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Index</p>
+              <ol class="mt-4 space-y-3 text-sm text-slate-600">
+                <li>1. 授業（主要五教科／副教科／SSとは）</li>
+                <li>2. 部活動（運動部／文化部／サークル）</li>
+                <li>3. 内部進学</li>
+                <li>4. 制服・教員・校則・校歌</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="classes" class="mx-auto max-w-6xl px-4 py-16">
+        <div class="flex flex-col gap-10 lg:flex-row">
+          <aside class="lg:w-64">
+            <h2 class="text-xl font-bold text-slate-900">授業</h2>
+            <p class="mt-3 text-sm text-slate-500">主要五教科・副教科・SSプログラムごとの授業レポートを掲載。</p>
+          </aside>
+          <div class="flex-1 space-y-8">
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold text-slate-900">主要五教科</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">
+                数学の授業数が多い点、英語の英語のみ教科書／DMM英会話、国語のSS国語など各教科の特徴をまとめるセクション。
+              </p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-sky-50/70 p-6">
+              <h3 class="text-lg font-semibold text-slate-900">副教科</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">
+                体育や芸術での合同授業、音楽の発表、家庭科の赤ちゃん甚平制作などのエピソードを追記予定。
+              </p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-yellow-50/80 p-6">
+              <h3 class="text-lg font-semibold text-slate-900">SSとは</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">
+                SSH活動・SS数学のグループワークなど、探究学習の流れを図解で入れられるよう配置。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="clubs" class="bg-white py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex flex-col gap-10 lg:flex-row">
+            <aside class="lg:w-64">
+              <h2 class="text-xl font-bold text-slate-900">部活動</h2>
+              <p class="mt-3 text-sm text-slate-500">運動部・文化部・サークルの三層構造でまとめ直すページ。</p>
+            </aside>
+            <div class="flex-1 space-y-6">
+              <div class="grid gap-6 md:grid-cols-2">
+                <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <h3 class="text-base font-semibold text-slate-900">運動部</h3>
+                  <p class="mt-3 text-sm leading-6 text-slate-600">
+                    ラグビー・サッカー・バレーボール・水泳などの活動ハイライト、マネージャー情報の置き場。
+                  </p>
+                </article>
+                <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <h3 class="text-base font-semibold text-slate-900">文化部</h3>
+                  <p class="mt-3 text-sm leading-6 text-slate-600">
+                    吹奏楽部や鉄道研究部、演劇部など展示・発表の見どころを写真付きで整理するスペース。
+                  </p>
+                </article>
+                <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <h3 class="text-base font-semibold text-slate-900">サークル</h3>
+                  <p class="mt-3 text-sm leading-6 text-slate-600">
+                    軽音学部やアントレプレナーシップサークルなど、新設団体の紹介を加筆予定。
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="progression" class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-10 lg:grid-cols-[0.35fr,1fr]">
+          <div>
+            <h2 class="text-xl font-bold text-slate-900">内部進学</h2>
+            <p class="mt-3 text-sm text-slate-500">中入生と高入生の比率や進学データをまとめる図表エリア。</p>
+          </div>
+          <div class="space-y-6">
+            <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-lg font-semibold text-slate-900">クラス構成</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">
+                1年時のGLクラス構成や協働学習の工夫などのテキストを配置。
+              </p>
+            </article>
+            <article class="rounded-3xl border border-slate-200 bg-sky-50/70 p-6">
+              <h3 class="text-lg font-semibold text-slate-900">進路実績</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">
+                大学合格実績・進路指導体制のポイントを表やグラフで掲載想定。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="culture" class="bg-slate-900 py-16 text-slate-50">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-10 lg:grid-cols-[0.35fr,1fr]">
+            <div>
+              <h2 class="text-xl font-bold">学校カルチャー</h2>
+              <p class="mt-3 text-sm text-slate-300">制服・教員・校則・校歌など生活ルール関連のまとめ。</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2">
+              <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h3 class="text-base font-semibold">制服</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-200">
+                  制服図鑑や着こなしポイント、季節ごとのバリエーション写真を置けるスペース。
+                </p>
+              </article>
+              <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h3 class="text-base font-semibold">教員</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-200">
+                  担任団体紹介、メンター制度、先生のコメントを差し込む予定。
+                </p>
+              </article>
+              <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h3 class="text-base font-semibold">校則</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-200">
+                  スマホ利用・交通ルールなど、在校生の実体験を文章化。
+                </p>
+              </article>
+              <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
+                <h3 class="text-base font-semibold">校歌</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-200">歌詞カードや音源リンクを掲載できるエリア。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between"
+      >
+        <p>© 2025 Moshio Fes / Shibaura Institute of Technology Kashiwa.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-sky-600">お問い合わせ</a>
+          <a href="#" class="hover:text-sky-600">プライバシー</a>
+        </div>
+      </div>
+    </footer>
+    <script src="site.js"></script>
+  </body>
+</html>

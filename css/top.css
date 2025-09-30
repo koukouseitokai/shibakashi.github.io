@@ -1,0 +1,194 @@
+/* css/top.css
+ * index.html（トップページ）専用のスタイル
+ * ヘッダーアニメーション、ヒーローセクション、モバイルメニューを含む
+ * RELEVANT FILES: index.html, js/site.js, css/style.css
+ */
+
+/* ========================================
+   アニメーション定義
+   ======================================== */
+/* ヘッダーが固定表示される際のスライドダウンアニメーション */
+@keyframes header-slide-down {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   ヘッダー状態管理
+   ======================================== */
+/* 初期状態：ヒーローセクション内では透明背景で絶対配置 */
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: transparent;
+  border-bottom: none;
+  transition:
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* スクロール後の固定状態：白背景で上部固定表示 */
+.site-header.is-fixed {
+  position: fixed;
+  /* 半透明の白背景でコンテンツが透けて見える */
+  background: rgba(255, 255, 255, 0.96);
+  /* 薄いボーダーで境界を明確化 */
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  /* 影で浮遊感を演出 */
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+  /* スライドダウンアニメーションを適用 */
+  animation: header-slide-down 0.4s ease;
+}
+
+/* ========================================
+   ロゴとナビゲーションの初期状態
+   ======================================== */
+/* トップページでは初期状態でロゴとナビを非表示
+   ヒーローセクション内ではハンバーガーメニューのみ表示 */
+.site-logo {
+  display: none !important;
+}
+.site-nav {
+  display: none !important;
+}
+
+/* ========================================
+   ヘッダーバーのレイアウト
+   ======================================== */
+/* 初期状態では右寄せ（ハンバーガーメニューのみ） */
+.header-bar {
+  justify-content: flex-end;
+  min-height: 64px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* ========================================
+   スクロール時の表示制御
+   ======================================== */
+/* ヘッダー固定時にロゴとナビゲーションを表示 */
+.site-header.is-fixed .site-logo {
+  display: inline-flex !important;
+}
+.site-header.is-fixed .header-bar {
+  justify-content: space-between;
+}
+.site-header.is-fixed [data-menu-toggle] {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* PC表示時（768px以上）の制御 */
+@media (min-width: 768px) {
+  /* ナビゲーションメニューを表示 */
+  .site-header.is-fixed .site-nav {
+    display: inline-flex !important;
+  }
+  /* ハンバーガーメニューは非表示 */
+  .site-header.is-fixed [data-menu-toggle] {
+    display: none;
+  }
+}
+
+/* ========================================
+   モバイルメニューアニメーション
+   ======================================== */
+/* 初期状態：非表示でクリック無効 */
+#mobile-menu {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+/* メニューオープン時：表示してクリック可能に */
+#mobile-menu.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* オーバーレイ（背景の暗転）のアニメーション */
+#mobile-menu .menu-overlay {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+/* メニューオープン時にオーバーレイを表示 */
+#mobile-menu.is-open .menu-overlay {
+  opacity: 1;
+}
+
+/* メニューパネル本体のスライドアニメーション */
+#mobile-menu [data-menu-panel] {
+  /* 初期状態：少し上にずらして非表示 */
+  transform: translateY(-16px);
+  opacity: 0;
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease;
+}
+
+/* メニューオープン時：定位置にスライドして表示 */
+#mobile-menu.is-open [data-menu-panel] {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ========================================
+   ヒーローコピー（メインビジュアルのテキスト）
+   ======================================== */
+.hero-copy {
+  /* カスタムWebフォントを使用 */
+  font-family: "HuiFontP29";
+  /* レスポンシブなフォントサイズ（最小7rem、基準11vw、最大8rem） */
+  font-size: clamp(7rem, 11vw, 8rem);
+  /* 文字間隔を広げて印象的に */
+  letter-spacing: 0.12em;
+  /* 行間を詰めてコンパクトに */
+  line-height: 1.08;
+  /* 少し傾けて動きのあるデザインに */
+  transform: rotate(-4deg);
+}
+
+/* フォント読み込み完了後の表示設定 */
+.font-hui-ready .hero-copy {
+  /* 少し透明感を持たせて背景と調和 */
+  opacity: 0.8 !important;
+  visibility: visible !important;
+}
+
+/* ========================================
+   モバイル対応（640px以下）
+   ======================================== */
+@media (max-width: 640px) {
+  /* ヒーローセクションをビューポート全体に */
+  .hero {
+    aspect-ratio: auto !important;
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  /* ヒーローコピーのモバイル調整 */
+  .hero-copy {
+    /* より小さいフォントサイズ範囲 */
+    font-size: clamp(5rem, 14vw, 7rem);
+    /* 文字間隔を少し狭める */
+    letter-spacing: 0.1em;
+    /* 傾きを控えめに */
+    transform: rotate(-2deg);
+  }
+
+  /* ヒーローテキストの位置調整 */
+  .hero-inner {
+    /* 上部からの位置をレスポンシブに調整 */
+    top: clamp(2.5rem, 20vw, 3rem) !important;
+    /* 左からの位置をレスポンシブに調整 */
+    left: clamp(1.2rem, 7vw, 2.2rem) !important;
+  }
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1021.86 225.33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-7);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-6);
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath-8);
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-5);
+      }
+
+      .cls-10 {
+        fill: #fff100;
+      }
+
+      .cls-11 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="378.54" width="638.67" height="132"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" x="369.4" y="57.79" width="655" height="29" transform="translate(-1.86 123.54) rotate(-10.12)"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-1" x="369.4" y="57.79" width="655" height="29" transform="translate(-1.86 123.54) rotate(-10.12)"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <rect class="cls-1" x="2.54" y="81.33" width="644" height="144"/>
+    </clipPath>
+    <clipPath id="clippath-4">
+      <rect class="cls-1" x="-2.38" y="138.98" width="655" height="29" transform="translate(-21.9 59.5) rotate(-10.12)"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <rect class="cls-1" x="2.54" y="81.33" width="644" height="144"/>
+    </clipPath>
+    <clipPath id="clippath-6">
+      <rect class="cls-1" x="3.88" y="94.67" width="640" height="130.67"/>
+    </clipPath>
+    <clipPath id="clippath-7">
+      <rect class="cls-1" x="-2.38" y="138.98" width="655" height="29" transform="translate(-21.9 59.5) rotate(-10.12)"/>
+    </clipPath>
+    <clipPath id="clippath-8">
+      <rect class="cls-1" x="-2.55" y="139" width="655" height="29" transform="translate(-21.91 59.47) rotate(-10.12)"/>
+    </clipPath>
+  </defs>
+  <g class="cls-11">
+    <g class="cls-2">
+      <g class="cls-5">
+        <path class="cls-10" d="M1012.14,1.31l5.07,28.39-28.39,5.07-2.18-12.2-607.34,108.37-.71-3.99L985.92,18.57l-2.18-12.19,28.39-5.07Z"/>
+      </g>
+    </g>
+  </g>
+  <g class="cls-3">
+    <g class="cls-4">
+      <g class="cls-9">
+        <g class="cls-7">
+          <g class="cls-6">
+            <g class="cls-8">
+              <path class="cls-10" d="M4.62,195.93l5.07,28.39,28.39-5.07-2.18-12.2,607.34-108.38-.71-3.99L35.19,203.06l-2.18-12.19-28.39,5.07Z"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

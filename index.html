@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="芝浦工業大学柏中学高等学校の学校生活を紹介するサイト。SSH指定校として最先端の理系教育を展開し、生徒一人ひとりの可能性を引き出す教育環境を提供しています。" />
+    <title>芝柏ライフ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/top.css" />
+    <script src="js/site.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header class="site-header">
+      <div class="header-bar mx-auto flex max-w-6xl items-center px-4">
+        <a
+          href="index.html"
+          class="site-logo flex items-center gap-2 text-sm font-semibold tracking-[0.25em] text-slate-700 uppercase"
+        >
+          <span>芝柏ライフ</span>
+        </a>
+        <nav class="site-nav inline-flex gap-6 text-[0.95rem] font-semibold text-slate-600" aria-label="メインメニュー">
+          <a href="about.html" class="transition hover:text-cyan-600">学校概要</a>
+          <a href="life.html" class="transition hover:text-cyan-600">学校生活</a>
+          <a href="events.html" class="transition hover:text-cyan-600">行事</a>
+          <a href="facilities.html" class="transition hover:text-cyan-600">施設</a>
+          <a href="media.html" class="transition hover:text-cyan-600">動画</a>
+        </nav>
+        <button
+          class="mt-1.5 inline-flex items-center justify-center rounded-full bg-white text-slate-800 shadow-md p-2 text-sm font-medium transition hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[90] hidden" aria-hidden="true">
+      <div class="menu-overlay absolute inset-0 bg-slate-900/70" data-menu-overlay></div>
+      <nav
+        class="absolute inset-x-4 top-6 rounded-3xl bg-white px-5 pb-10 pt-5 shadow-2xl"
+        role="dialog"
+        aria-modal="true"
+        data-menu-panel
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-semibold tracking-[0.2em] text-slate-500">MENU</span>
+          <button
+            class="rounded-full border border-slate-300 p-2 text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+            aria-label="メニューを閉じる"
+            data-menu-close
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M4.22 4.22a.75.75 0 0 1 1.06 0L10 8.94l4.72-4.72a.75.75 0 1 1 1.06 1.06L11.06 10l4.72 4.72a.75.75 0 1 1-1.06 1.06L10 11.06l-4.72 4.72a.75.75 0 0 1-1.06-1.06L8.94 10 4.22 5.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="mt-6 flex flex-col gap-3 text-base font-semibold text-slate-800">
+          <li>
+            <a href="index.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >トップページ</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >学校概要</a
+            >
+          </li>
+          <li>
+            <a href="life.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >学校生活</a
+            >
+          </li>
+          <li>
+            <a href="events.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100">行事</a>
+          </li>
+          <li>
+            <a href="facilities.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >施設</a
+            >
+          </li>
+          <li>
+            <a href="media.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100">動画</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main id="top">
+      <section
+        class="hero relative w-full aspect-square overflow-hidden bg-[#0b1f30]"
+        style="min-height: clamp(360px, 70vw, 820px); max-height: 90vh"
+        aria-labelledby="hero-title"
+      >
+        <img
+          src="img/top1.jpeg"
+          alt=""
+          class="hero-bg absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+          style="object-position: right bottom"
+          aria-hidden="true"
+        />
+        <div
+          class="hero-inner absolute flex flex-col items-start text-left text-white z-[1]"
+          style="top: clamp(5rem, 8vw, 8rem); left: clamp(1.5rem, 6vw, 3rem); gap: clamp(0.6rem, 2vw, 1rem)"
+        >
+          <p
+            class="hero-copy inline-block font-bold text-white opacity-0 invisible transition-opacity duration-[450ms] ease-in-out"
+          >
+            芝柏<br />ライフ!
+          </p>
+        </div>
+      </section>
+
+      <!-- このサイトについて -->
+      <section id="site-intro" class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-12 lg:grid-cols-[0.4fr,1fr]">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900">このサイトについて</h2>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">About This Site</p>
+          </div>
+          <div>
+            <p class="text-base leading-7 text-slate-600">
+              芝浦工業大学柏中学高等学校は理系・グローバル教育に力を入れる中高一貫校。授業スタイルや理系比率の高さなど、在校生ならではのリアルな視点で学校生活の魅力を紹介します。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TOPIC：増穂祭特集 -->
+      <section id="topic" class="bg-gradient-to-r from-cyan-50 to-yellow-50 py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 lg:grid-cols-[0.4fr,1fr]">
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">トピック</h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">TOPIC</p>
+            </div>
+            <div>
+              <!-- バナー画像風のリンク -->
+              <a
+                href="masuhofes.html"
+                class="block group relative overflow-hidden rounded-2xl bg-gradient-to-r from-cyan-600 to-indigo-600 p-8 text-white shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                <div class="relative z-10">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <p class="text-sm font-semibold uppercase tracking-wider opacity-90">Special Feature</p>
+                      <h3 class="mt-2 text-2xl font-bold">増穂祭特集ページ</h3>
+                      <p class="mt-2 text-sm opacity-90">芝柏最大のイベントを特集でお届け</p>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-12 w-12 opacity-80 group-hover:translate-x-2 transition-transform"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9.5H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <!-- 装飾的な背景パターン -->
+                <div class="absolute inset-0 opacity-10">
+                  <div class="absolute -top-12 -right-12 h-48 w-48 rounded-full bg-white"></div>
+                  <div class="absolute -bottom-12 -left-12 h-48 w-48 rounded-full bg-white"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-12 lg:grid-cols-[0.4fr,1fr]">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900">学校概要</h2>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">About</p>
+          </div>
+          <div class="space-y-6">
+            <!-- PC画面で横並び、モバイルで縦並び -->
+            <div class="grid gap-6 lg:grid-cols-2">
+              <!-- テキスト部分（左） -->
+              <div class="space-y-6">
+                <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <h3 class="text-lg font-semibold text-slate-900">教育の柱</h3>
+                  <p class="mt-3 text-sm leading-6 text-slate-600">
+                    GSクラスとGLクラスでそれぞれ最難関・難関大学進学を目指すカリキュラムを展開。
+                  </p>
+                </article>
+                <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                  <h3 class="text-lg font-semibold text-slate-900">学習スタイル</h3>
+                  <p class="mt-3 text-sm leading-6 text-slate-600">
+                    反転学習やアクティブラーニング、SSH活動を通じて主体的な学びを促進。SS（芝浦サイエンス）科目で探究型学習を実践。
+                  </p>
+                </article>
+              </div>
+              <!-- 写真プレースホルダー（右） -->
+              <div class="w-full max-w-md mx-auto lg:mx-0">
+                <img
+                  src="https://picsum.photos/600/450?random=1"
+                  alt="学校概要"
+                  class="aspect-[4/3] w-full rounded-2xl object-cover"
+                />
+              </div>
+            </div>
+            <div class="flex justify-end">
+              <a
+                href="about.html"
+                class="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-6 py-3 text-white font-semibold shadow-lg hover:bg-cyan-700 transition-colors"
+              >
+                詳しくはこちら
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="life" class="bg-white py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-8 lg:grid-cols-[0.4fr,1fr]">
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">学校生活</h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">School life</p>
+            </div>
+            <div class="space-y-6">
+              <!-- PC画面で横並び、モバイルで縦並び -->
+              <div class="grid gap-6 lg:grid-cols-2">
+                <!-- テキスト（左） -->
+                <div>
+                  <p class="text-base leading-7 text-slate-600">
+                    授業や、部活動、制服、校則など、芝柏ならではの学校の特色をご紹介します。
+                  </p>
+                </div>
+                <!-- 写真プレースホルダー（右） -->
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/450?random=2"
+                    alt="学校生活"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <a
+                  href="life.html"
+                  class="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-6 py-3 text-white font-semibold shadow-lg hover:bg-cyan-700 transition-colors"
+                >
+                  詳しくはこちら
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="bg-slate-900 py-16 text-slate-50 overflow-hidden">
+        <div class="mx-auto max-w-6xl px-4">
+          <div>
+            <h2 class="text-2xl font-bold">年間行事</h2>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-300">events</p>
+          </div>
+
+          <!-- 横自動スクロール -->
+          <div class="mt-12 relative overflow-hidden">
+            <style>
+              @keyframes scroll-horizontal {
+                0% {
+                  transform: translateX(0);
+                }
+                100% {
+                  transform: translateX(-50%);
+                }
+              }
+              .events-scroll {
+                animation: scroll-horizontal 20s linear infinite;
+                display: inline-flex;
+              }
+              .events-scroll:hover {
+                animation-play-state: paused;
+              }
+            </style>
+            <div class="events-scroll">
+              <!-- イベントカードを2セット配置してループを実現 -->
+              <div class="flex gap-6 px-3">
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=3"
+                    alt="増穂祭"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">増穂祭</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=4"
+                    alt="球技大会"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">球技大会</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=5"
+                    alt="研修旅行"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">研修旅行</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=6"
+                    alt="合唱祭"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">合唱祭</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=7"
+                    alt="芸術鑑賞会"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">芸術鑑賞会</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=8"
+                    alt="海外研修"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">海外研修</p>
+                </div>
+              </div>
+              <!-- 同じセットをもう一度（ループのため） -->
+              <div class="flex gap-6 px-3">
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=3"
+                    alt="増穂祭"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">増穂祭</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=4"
+                    alt="球技大会"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">球技大会</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=5"
+                    alt="研修旅行"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">研修旅行</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=6"
+                    alt="合唱祭"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">合唱祭</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=7"
+                    alt="芸術鑑賞会"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">芸術鑑賞会</p>
+                </div>
+                <div class="flex-shrink-0 w-72">
+                  <img
+                    src="https://picsum.photos/320/240?random=8"
+                    alt="海外研修"
+                    class="aspect-[4/3] w-full rounded-lg object-cover mb-3"
+                  />
+                  <p class="text-sm font-semibold">海外研修</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-end mt-12">
+            <a
+              href="events.html"
+              class="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-6 py-3 text-white font-semibold shadow-lg hover:bg-cyan-700 transition-colors"
+            >
+              詳しくはこちら
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="facilities" class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-12 lg:grid-cols-[0.4fr,1fr]">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900">施設紹介</h2>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">facilities</p>
+          </div>
+          <div class="space-y-6">
+            <p class="text-base leading-7 text-slate-600">
+              大人気のカフェテリアをはじめ、学習できる場所や売店など、迷宮とも言われるほど充実した芝柏の施設をご紹介します。
+            </p>
+            <div class="flex justify-end">
+              <a
+                href="facilities.html"
+                class="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-6 py-3 text-white font-semibold shadow-lg hover:bg-cyan-700 transition-colors"
+              >
+                詳しくはこちら
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="media" class="bg-cyan-50 py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 lg:grid-cols-[0.4fr,1fr]">
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">動画</h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">movie</p>
+            </div>
+            <div class="space-y-6">
+              <p class="text-base leading-7 text-slate-600">このサイトを作った生徒会メンバーの日常をお届けします。</p>
+              <!-- 動画1個だけ表示 -->
+              <div class="w-full max-w-3xl">
+                <div
+                  class="aspect-video overflow-hidden rounded-3xl border border-cyan-100 bg-gradient-to-br from-slate-100 to-slate-200 shadow-lg shadow-cyan-100/60 flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-16 w-16 text-slate-400"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <a
+                  href="media.html"
+                  class="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-6 py-3 text-white font-semibold shadow-lg hover:bg-cyan-700 transition-colors"
+                >
+                  他の動画もチェック
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between"
+      >
+        <p>© 2025 Shibaura Institute of Technology Kashiwa.</p>
+      </div>
+    </footer>
+  </body>
+</html>

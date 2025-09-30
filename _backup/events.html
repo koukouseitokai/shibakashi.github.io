@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>行事｜芝浦工業大学柏中学高等学校 増穂祭サイト</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root { color-scheme: light; }
+      body { font-feature-settings: "palt"; }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+
+    <header class="sticky top-0 z-50 bg-slate-50/80 backdrop-blur border-b border-slate-200">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="text-2xl font-bold text-sky-500">Masuo Fes</span>
+        </a>
+        <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-600 md:flex">
+          <a href="about.html" class="transition hover:text-sky-600">学校概要</a>
+          <a href="life.html" class="transition hover:text-sky-600">学校生活</a>
+          <a href="events.html" class="transition hover:text-sky-600">行事</a>
+          <a href="facilities.html" class="transition hover:text-sky-600">施設</a>
+          <a href="media.html" class="transition hover:text-sky-600">動画</a>
+        </nav>
+        <button
+          class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-sky-400 hover:text-sky-500 md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          メニュー
+        </button>
+      </div>
+      <div id="mobile-menu" class="fixed inset-0 z-40 hidden md:hidden" aria-hidden="true">
+        <div class="absolute inset-0 bg-slate-900/50" data-menu-overlay></div>
+        <nav class="absolute inset-x-4 top-4 rounded-3xl bg-white px-5 pb-10 pt-20 shadow-2xl" role="dialog" aria-modal="true">
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-bold text-sky-500">Masuo Fes</span>
+            <button
+              class="rounded-full border border-slate-300 p-2 text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+              aria-label="メニューを閉じる"
+              data-menu-close
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M4.22 4.22a.75.75 0 0 1 1.06 0L10 8.94l4.72-4.72a.75.75 0 1 1 1.06 1.06L11.06 10l4.72 4.72a.75.75 0 1 1-1.06 1.06L10 11.06l-4.72 4.72a.75.75 0 0 1-1.06-1.06L8.94 10 4.22 5.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+          <ul class="mt-8 flex flex-col gap-3 text-base font-semibold text-slate-800">
+            <li><a href="about.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">学校概要</a></li>
+            <li><a href="life.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">学校生活</a></li>
+            <li><a href="events.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">行事</a></li>
+            <li><a href="facilities.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">施設</a></li>
+            <li><a href="media.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">動画</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+
+<section class="relative overflow-hidden bg-gradient-to-br from-sky-100 via-white to-sky-200 py-20">
+  <div class="mx-auto flex max-w-6xl flex-col gap-10 px-4 lg:flex-row lg:items-center">
+    <div class="flex-1 space-y-6">
+      <span class="inline-flex items-center gap-2 rounded-full bg-yellow-300 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-black">
+        Annual Events
+      </span>
+      <h1 class="text-3xl font-black leading-tight text-slate-900 sm:text-5xl">
+        芝柏の一年
+      </h1>
+      <p class="text-lg leading-relaxed text-slate-600">
+        芝柏の学校行事をご紹介！  
+      </p>
+    </div>
+    <div class="flex flex-1 flex-col gap-6 rounded-3xl border border-sky-200 bg-white/80 p-6 shadow-xl shadow-sky-100/60">
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Timeline</p>
+      <ul class="space-y-3 text-sm text-slate-600">
+        <li>5月：球技大会（1-3年生）</li>
+        <li>6月：研修旅行（2年生）</li>
+        <li>7-8月：海外研修（希望者）</li>
+        <li>10月：増穂祭（1.2年生）</li>
+        <li>11月：芸術鑑賞会（1〜3年生）</li>
+        <li>12月：合唱祭（1.2年生）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="mx-auto max-w-6xl px-4 py-16">
+  <div class="space-y-10">
+    <div class="grid gap-6 lg:grid-cols-[0.3fr,1fr]">
+      <div>
+        <h2 class="text-xl font-bold text-slate-900">高校イベント</h2>
+        <p class="mt-3 text-sm text-slate-500">球技大会・研修旅行・海外留学・増穂祭・芸術鑑賞会・合唱祭</p>
+      </div>
+      <div class="space-y-6">
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">球技大会</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">オープニング・部活企画・エンディングの3部構成やパンフレットPDF、当日のタイムテーブルを追記予定。</p>
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-sky-50/70 p-6">
+          <h3 class="text-lg font-semibold text-slate-900">研修旅行</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">行き先やプログラム内容、参加者の声をまとめるスペース。</p>
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">海外研修</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">競技種目や優勝クラスなど結果を入れる表を想定。</p>
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">増穂祭</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">競技種目や優勝クラスなど結果を入れる表を想定。</p>
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">芸術鑑賞会</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">競技種目や優勝クラスなど結果を入れる表を想定。</p>
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">合唱祭</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">競技種目や優勝クラスなど結果を入れる表を想定。</p>
+      </div>
+    </div>
+
+    <div class="grid gap-6 lg:grid-cols-[0.3fr,1fr]">
+      <div>
+        <h2 class="text-xl font-bold text-slate-900">中学イベント</h2>
+        <p class="mt-3 text-sm text-slate-500">グリーンスクール・海外語学研修・増穂祭・運動会・芸術鑑賞会・合唱祭。</p>
+      </div>
+      <div class="space-y-6">
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">グリーンスクール</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">福島での2泊3日林間学校のスナップやスケジュールを書き込む予定。</p>
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-yellow-50/80 p-6">
+          <h3 class="text-lg font-semibold text-slate-900">海外語学研修</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">ニュージーランドでのホームステイ体験記事や持ち物リストを差し込める余白。</p>
+        </article>
+        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold text-slate-900">運動会・合唱祭</h3>
+          <p class="mt-3 text-sm leading-7 text-slate-600">会場が松戸中心であること、現地集合の注意点など在校生コメントを掲載。</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-slate-900 py-16 text-slate-50">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+      <div>
+        <h2 class="text-xl font-bold">ダウンロード &amp; アーカイブ</h2>
+        <p class="mt-3 text-sm text-slate-300">歴代パンフレット・タイムテーブル・アフタームービーへの導線。</p>
+      </div>
+      <div class="grid gap-4 md:grid-cols-2">
+        <a href="#" class="rounded-2xl border border-white/20 bg-white/10 px-6 py-5 text-sm font-semibold text-slate-100 transition hover:border-white/40 hover:text-white">増穂祭パンフレット PDF</a>
+        <a href="#" class="rounded-2xl border border-white/20 bg-white/10 px-6 py-5 text-sm font-semibold text-slate-100 transition hover:border-white/40 hover:text-white">過去動画アーカイブ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+<footer class="border-t border-slate-200 bg-white">
+  <div class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between">
+    <p>© 2025 Moshio Fes / Shibaura Institute of Technology Kashiwa.</p>
+    <div class="flex gap-4">
+      <a href="#" class="hover:text-sky-600">お問い合わせ</a>
+      <a href="#" class="hover:text-sky-600">プライバシー</a>
+    </div>
+  </div>
+</footer>
+    <script src="site.js"></script>
+  </body>
+</html>

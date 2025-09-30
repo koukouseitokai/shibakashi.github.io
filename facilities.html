@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="芝浦工業大学柏中学高等学校の充実した施設紹介。売店、カフェテリア、図書室、自習室、大体育館など、学習と活動を全力サポートする施設環境を詳しく紹介します。" />
+    <title>施設｜芝柏ライフ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/site.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-lg">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 min-h-[64px]">
+        <a
+          href="index.html"
+          class="site-logo flex items-center gap-2 text-sm font-semibold tracking-[0.25em] text-slate-700 uppercase"
+        >
+          <span>芝柏ライフ</span>
+        </a>
+        <nav
+          class="hidden md:inline-flex gap-6 text-[0.95rem] font-semibold text-slate-600"
+          aria-label="メインメニュー"
+        >
+          <a href="about.html" class="transition hover:text-cyan-600">学校概要</a>
+          <a href="life.html" class="transition hover:text-cyan-600">学校生活</a>
+          <a href="events.html" class="transition hover:text-cyan-600">行事</a>
+          <a href="facilities.html" class="transition hover:text-cyan-600">施設</a>
+          <a href="media.html" class="transition hover:text-cyan-600">動画</a>
+        </nav>
+        <button
+          class="md:hidden mt-1.5 inline-flex items-center justify-center rounded-full text-slate-800 p-2 text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[90] hidden" aria-hidden="true">
+      <div class="menu-overlay absolute inset-0 bg-slate-900/70" data-menu-overlay></div>
+      <nav
+        class="absolute inset-x-4 top-6 rounded-3xl bg-white px-5 pb-10 pt-5 shadow-2xl"
+        role="dialog"
+        aria-modal="true"
+        data-menu-panel
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-semibold tracking-[0.2em] text-slate-500">MENU</span>
+          <button
+            class="rounded-full border border-slate-300 p-2 text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+            aria-label="メニューを閉じる"
+            data-menu-close
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M4.22 4.22a.75.75 0 0 1 1.06 0L10 8.94l4.72-4.72a.75.75 0 1 1 1.06 1.06L11.06 10l4.72 4.72a.75.75 0 1 1-1.06 1.06L10 11.06l-4.72 4.72a.75.75 0 0 1-1.06-1.06L8.94 10 4.22 5.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="mt-6 flex flex-col gap-3 text-base font-semibold text-slate-800">
+          <li>
+            <a href="index.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >トップページ</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >学校概要</a
+            >
+          </li>
+          <li>
+            <a href="life.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >学校生活</a
+            >
+          </li>
+          <li>
+            <a href="events.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100">行事</a>
+          </li>
+          <li>
+            <a href="facilities.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >施設</a
+            >
+          </li>
+          <li>
+            <a href="media.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100">動画</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="pt-16">
+      <section class="relative overflow-hidden bg-gray-100 py-20">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-10 md:grid-cols-[1fr,0.5fr] md:items-center">
+            <div class="space-y-6">
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-slate-600 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-white shadow"
+              >
+                Facilities
+              </span>
+              <h1 class="text-3xl font-black leading-tight text-slate-900 sm:text-5xl">
+                充実の施設で、学びも活動も全力サポート
+              </h1>
+              <p class="text-lg leading-relaxed text-slate-600">
+                売店での買い物から図書室での静かな学習まで、芝柏生の日常を支える施設たち。それぞれの場所に、生徒たちの思い出と成長の物語が詰まっています。
+              </p>
+            </div>
+            <div class="rounded-3xl border border-slate-300 bg-white/80 p-6 shadow-sm shadow-slate-100">
+              <p class="text-sm uppercase tracking-[0.2em] text-cyan-600">Facility Map</p>
+              <ol class="mt-4 space-y-3 text-sm text-slate-600">
+                <li>1. 売店</li>
+                <li>2. カフェテリア</li>
+                <li>3. 図書室</li>
+                <li>4. 自習室</li>
+                <li>5. 大体育館</li>
+              </ol>
+              <p class="mt-4 text-xs text-slate-500">※カードをタップすると詳細が表示されます</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 施設カードグリッド -->
+      <section class="mx-auto max-w-6xl px-4 py-16">
+        <style>
+          /* カードフリップのスタイル */
+          .flip-card {
+            background-color: transparent;
+            width: 100%;
+            height: 320px;
+            perspective: 1000px;
+          }
+
+          .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+          }
+
+          .flip-card.flipped .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+
+          .flip-card-front,
+          .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border-radius: 1rem;
+            overflow: hidden;
+          }
+
+          .flip-card-front {
+            background-color: #f8fafc;
+            z-index: 2;
+          }
+
+          .flip-card-back {
+            background-color: white;
+            transform: rotateY(180deg);
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+
+          .flip-hint {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 2rem;
+            font-size: 0.75rem;
+            z-index: 10;
+            pointer-events: none;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+
+          /* フリップ時にヒントを非表示 */
+          .flip-card.flipped .flip-hint {
+            display: none;
+          }
+        </style>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- 売店カード -->
+          <div class="flip-card max-w-md mx-auto" data-facility="shop">
+            <div class="flip-card-inner">
+              <div class="flip-card-front cursor-pointer">
+                <img src="https://picsum.photos/600/450?random=11" alt="売店" class="h-full w-full object-cover" />
+                <div class="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/50 to-transparent p-4">
+                  <h3 class="text-xl font-bold text-white">売店</h3>
+                  <p class="text-xs uppercase tracking-wider text-white/80">SCHOOL SHOP</p>
+                </div>
+                <div class="flip-hint">タップして詳細を見る</div>
+              </div>
+              <div class="flip-card-back cursor-pointer">
+                <div>
+                  <h3 class="mb-4 text-xl font-bold text-slate-900">売店</h3>
+                  <p class="text-sm leading-6 text-slate-600">
+                    休み時間にダッシュしてお目当ての菓子パンなどを買って食べてる人がたくさんいます。制服や体操着も売っていて、サイズが合わなかったら未開封なら交換してくれて、売店のおばさんがサイズ選びを手伝ってくれます。平日は9時から17時、土日は9時から15時まで開いてます。お昼休みは大変混雑するので、注意しましょう。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- カフェテリアカード -->
+          <div class="flip-card max-w-md mx-auto" data-facility="cafeteria">
+            <div class="flip-card-inner">
+              <div class="flip-card-front cursor-pointer">
+                <img
+                  src="https://picsum.photos/600/450?random=12"
+                  alt="カフェテリア"
+                  class="h-full w-full object-cover"
+                />
+                <div class="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/50 to-transparent p-4">
+                  <h3 class="text-xl font-bold text-white">カフェテリア</h3>
+                  <p class="text-xs uppercase tracking-wider text-white/80">CAFETERIA</p>
+                </div>
+                <div class="flip-hint">タップして詳細を見る</div>
+              </div>
+              <div class="flip-card-back cursor-pointer">
+                <div>
+                  <h3 class="mb-4 text-xl font-bold text-slate-900">カフェテリア</h3>
+                  <p class="text-sm leading-6 text-slate-600">
+                    麺類やカレーライス、日替わりランチなどメニューが豊富で美味しいです。唐揚げは友達に狙われるので気をつけてください。食事だけでなく自習スペースとしても使えるので、放課後勉強してる人もたくさんいます。メンターさんがいて進路相談や勉強の質問に答えてくれて、電子レンジやウォーターサーバーもあるので便利です。ウォーターサーバーは初見殺し要素があるので使ってみてください。勉強にも食事にも使える場所です。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 図書室カード -->
+          <div class="flip-card max-w-md mx-auto" data-facility="library">
+            <div class="flip-card-inner">
+              <div class="flip-card-front cursor-pointer">
+                <img src="https://picsum.photos/600/450?random=13" alt="図書室" class="h-full w-full object-cover" />
+                <div class="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/50 to-transparent p-4">
+                  <h3 class="text-xl font-bold text-white">図書室</h3>
+                  <p class="text-xs uppercase tracking-wider text-white/80">LIBRARY</p>
+                </div>
+                <div class="flip-hint">タップして詳細を見る</div>
+              </div>
+              <div class="flip-card-back cursor-pointer">
+                <div>
+                  <h3 class="mb-4 text-xl font-bold text-slate-900">図書室</h3>
+                  <p class="text-sm leading-6 text-slate-600">
+                    約50000冊の本があって、パソコンで借りられているかどうかがわかるので便利です。勉強もできちゃいます。けど誰も使ってません。ぜひ使ってあげてください。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 自習室カード -->
+          <div class="flip-card max-w-md mx-auto" data-facility="study-room">
+            <div class="flip-card-inner">
+              <div class="flip-card-front cursor-pointer">
+                <img src="https://picsum.photos/600/450?random=14" alt="自習室" class="h-full w-full object-cover" />
+                <div class="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/50 to-transparent p-4">
+                  <h3 class="text-xl font-bold text-white">自習室</h3>
+                  <p class="text-xs uppercase tracking-wider text-white/80">STUDY ROOM</p>
+                </div>
+                <div class="flip-hint">タップして詳細を見る</div>
+              </div>
+              <div class="flip-card-back cursor-pointer">
+                <div>
+                  <h3 class="mb-4 text-xl font-bold text-slate-900">自習室</h3>
+                  <p class="text-sm leading-6 text-slate-600">
+                    机が教室の机の大体1.5倍くらいの大きさで、とても広くて使いやすいです。自習室で勉強したあと教室に行くとものが落ちそうで悲しくなります。全部で30席ほどあります。テスト期間は混雑して席を取るのが大変ですが、普段は比較的いつでも座れるので気軽に利用できます。とても静かで集中しやすい環境なので、勉強がはかどります。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 大体育館カード -->
+          <div class="flip-card max-w-md mx-auto" data-facility="gymnasium">
+            <div class="flip-card-inner">
+              <div class="flip-card-front cursor-pointer">
+                <img src="https://picsum.photos/600/450?random=15" alt="大体育館" class="h-full w-full object-cover" />
+                <div class="absolute top-0 left-0 right-0 bg-gradient-to-b from-black/50 to-transparent p-4">
+                  <h3 class="text-xl font-bold text-white">大体育館</h3>
+                  <p class="text-xs uppercase tracking-wider text-white/80">GYMNASIUM</p>
+                </div>
+                <div class="flip-hint">タップして詳細を見る</div>
+              </div>
+              <div class="flip-card-back cursor-pointer">
+                <div>
+                  <h3 class="mb-4 text-xl font-bold text-slate-900">大体育館</h3>
+                  <p class="text-sm leading-6 text-slate-600">
+                    体育館はとても広くて、部活動や授業だけでなく、全校集会や入学式などの行事でも使われます。昼休みにはボールを借りて遊ぶこともできますが、している人は少ないように感じます。床は木ではなく少し柔らかい謎素材なので、転んでも安心で、運動しやすいです。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between"
+      >
+        <p>© 2025 Shibaura Institute of Technology Kashiwa.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>芝浦工業大学柏中学高等学校 増穂祭サイト</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script sre="js/site.js" defer></script>
+
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        letter-spacing: 0.1em;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      .hero {
+        position: relative;
+        min-height: clamp(720px, 100vh, 940px);
+        background-color: #08c2ff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(3rem, 8vw, 6rem) clamp(1.5rem, 6vw, 3rem) clamp(4rem, 8vw, 6.5rem);
+        overflow: hidden;
+      }
+      .hero-inner {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        color: #000;
+      }
+      .hero-title-wrapper {
+        position: relative;
+        display: block;
+        width: 95%;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 10rem;
+      }
+      .hero-title {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+      }
+      .hero-lines {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+      .hero-line {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .hero-line--top {
+        position: absolute;
+        top: -30%;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        transform: scale(1.2);
+      }
+      .hero-line--bottom {
+        position: absolute;
+        bottom: -8%;
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        transform: scale(1.2);
+      }
+      .hero-ticket {
+        position: relative;
+        margin: clamp(2rem, 4vw, 3rem) auto 0;
+        display: inline-flex;
+        align-items: center;
+        gap: clamp(1rem, 3vw, 2rem);
+        padding: clamp(0.8rem, 2vw, 1.2rem) clamp(1.5rem, 4vw, 2.5rem);
+        border-radius: 0;
+        border: 2px solid #000;
+        background: linear-gradient(135deg, #63d4ff 0%, #1cb4ff 100%);
+        box-shadow: 12px 14px 0 rgba(8, 112, 170, 0.7);
+      }
+      .hero-date {
+        display: flex;
+        align-items: flex-end;
+        gap: 0.4rem;
+        font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+        font-weight: 900;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #0b1426;
+      }
+      .hero-date-suffix {
+        font-size: 0.48em;
+        font-weight: 700;
+        letter-spacing: 0.35em;
+      }
+      .hero-separator {
+        font-size: clamp(2rem, 5vw, 2.4rem);
+        font-weight: 800;
+        letter-spacing: 0.4em;
+        color: #0b1426;
+      }
+      .hero-caption {
+        margin-top: clamp(2rem, 4vw, 2.8rem);
+        font-size: clamp(1.2rem, 3.2vw, 1.6rem);
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        color: #0b1426;
+      }
+      .hero-dot {
+        position: absolute;
+        width: clamp(240px, 35vw, 400px);
+        height: clamp(240px, 35vw, 400px);
+        pointer-events: none;
+      }
+      .hero-dot img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.65;
+      }
+      .hero-dot--tl {
+        top: clamp(-120px, -15vw, -50px);
+        left: clamp(-140px, -18vw, -60px);
+        transform: rotate(18deg);
+      }
+      .hero-splash {
+        position: absolute;
+        pointer-events: none;
+      }
+      .hero-splash img {
+        width: 100%;
+        height: 100%;
+        filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.15));
+      }
+      .hero-splash--tr {
+        top: clamp(-60px, -8vw, 0px);
+        right: clamp(-50px, -7vw, 30px);
+        width: clamp(200px, 32vw, 380px);
+        height: clamp(200px, 32vw, 380px);
+        transform: rotate(-8deg);
+      }
+      .hero-splash--bl {
+        bottom: clamp(-100px, -14vw, -20px);
+        left: clamp(-60px, -8vw, 10px);
+        width: clamp(250px, 38vw, 450px);
+        height: clamp(250px, 38vw, 450px);
+        transform: rotate(10deg);
+      }
+      /* レスポンシブ対応 */
+      @media (max-width: 640px) {
+        .hero-title-wrapper {
+          width: 98%;
+        }
+        .hero-ticket {
+          max-width: 90%;
+          padding: 0.8rem 1.2rem;
+          gap: 0.8rem;
+        }
+        .hero {
+          min-height: clamp(600px, 100vh, 800px);
+          padding: clamp(2rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem) clamp(3rem, 6vw, 4.5rem);
+        }
+        .hero-dot--tl {
+          top: -80px;
+          left: -100px;
+        }
+        .hero-splash--tr {
+          top: -40px;
+          right: -40px;
+        }
+        .hero-splash--bl {
+          bottom: -80px;
+          left: -50px;
+        }
+        .hero-line--top,
+        .hero-line--bottom {
+          transform: scale(1.1);
+          width: 90%;
+          left: 5%;
+          right: 5%;
+        }
+      }
+      @media (min-width: 768px) {
+        .hero-title-wrapper {
+          margin-bottom: 1rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .hero-dot--tl {
+          width: 400px;
+          height: 400px;
+        }
+        .hero-splash--tr {
+          width: 380px;
+          height: 380px;
+        }
+        .hero-splash--bl {
+          width: 450px;
+          height: 450px;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header class="sticky top-0 z-50 bg-slate-50/80 backdrop-blur border-b border-slate-200">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="index.html" class="flex items-center gap-2"> </a>
+        <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-600 md:flex">
+          <a href="about.html" class="transition hover:text-sky-600">学校概要</a>
+          <a href="life.html" class="transition hover:text-sky-600">学校生活</a>
+          <a href="events.html" class="transition hover:text-sky-600">行事</a>
+          <a href="facilities.html" class="transition hover:text-sky-600">施設</a>
+          <a href="media.html" class="transition hover:text-sky-600">動画</a>
+        </nav>
+        <button
+          class="inline-flex items-center justify-center rounded-full border border-slate-300 p-2 text-sm font-medium text-slate-700 transition hover:border-sky-400 hover:text-sky-500 md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="fixed inset-0 z-40 hidden md:hidden" aria-hidden="true">
+        <div class="absolute inset-0 bg-slate-900/50" data-menu-overlay></div>
+        <nav
+          class="absolute inset-x-4 top-4 rounded-3xl bg-white px-5 pb-10 pt-5 shadow-2xl"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div class="flex items-center justify-end">
+            <button
+              class="rounded-full border border-slate-300 p-2 text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+              aria-label="メニューを閉じる"
+              data-menu-close
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M4.22 4.22a.75.75 0 0 1 1.06 0L10 8.94l4.72-4.72a.75.75 0 1 1 1.06 1.06L11.06 10l4.72 4.72a.75.75 0 1 1-1.06 1.06L10 11.06l-4.72 4.72a.75.75 0 0 1-1.06-1.06L8.94 10 4.22 5.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <ul class="mt-8 flex flex-col gap-3 text-base font-semibold text-slate-800">
+            <li>
+              <a href="about.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >学校概要</a
+              >
+            </li>
+            <li>
+              <a href="life.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >学校生活</a
+              >
+            </li>
+            <li>
+              <a href="events.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >行事</a
+              >
+            </li>
+            <li>
+              <a href="facilities.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >施設</a
+              >
+            </li>
+            <li>
+              <a href="media.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">動画</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <!-- 左上のドット柄 -->
+        <div class="hero-dot hero-dot--tl" aria-hidden="true">
+          <img src="svg/dot.svg" alt="" />
+        </div>
+
+        <!-- 右上のペイント装飾 -->
+        <div class="hero-splash hero-splash--tr" aria-hidden="true">
+          <img src="svg/paint1.svg" alt="" />
+        </div>
+
+        <!-- 左下のペイント装飾 -->
+        <div class="hero-splash hero-splash--bl" aria-hidden="true">
+          <img src="svg/paint2.svg" alt="" />
+        </div>
+
+        <div class="hero-inner">
+          <h1 id="hero-title" class="sr-only">第46回 芝浦工業大学柏高校 増穂祭</h1>
+
+          <!-- タイトル部分 -->
+          <div class="hero-title-wrapper" aria-hidden="true">
+            <!-- 上のライン装飾 -->
+            <div class="hero-lines">
+              <img src="svg/line.svg" alt="" class="hero-line hero-line--top" />
+              <img src="svg/line.svg" alt="" class="hero-line hero-line--bottom" />
+            </div>
+            <!-- メインタイトル -->
+            <img src="svg/title.svg" alt="第46回 芝浦工業大学柏高校 増穂祭" class="hero-title" />
+          </div>
+
+          <div class="hero-ticket">
+            <span class="hero-date">
+              10.04
+              <span class="hero-date-suffix">sat</span>
+            </span>
+            <span class="hero-separator">-</span>
+            <span class="hero-date">
+              10.05
+              <span class="hero-date-suffix">sun</span>
+            </span>
+          </div>
+
+          <p class="hero-caption">芝浦工業大学柏高校文化祭</p>
+        </div>
+      </section>
+
+      <section id="about" class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-12 lg:grid-cols-[0.4fr,1fr]">
+          <div class="space-y-4">
+            <h2 class="text-2xl font-bold text-slate-900">学校概要</h2>
+            <p class="text-sm uppercase tracking-[0.2em] text-sky-600">About</p>
+          </div>
+          <div class="space-y-6">
+            <p class="text-base leading-7 text-slate-600">
+              芝浦工業大学柏中学高等学校は理系・グローバル教育に力を入れる中高一貫校。バス通学や理系比率の高さなど、在校生ならではのリアルな視点で学校生活の魅力と課題を紹介します。
+            </p>
+            <div class="grid gap-6 sm:grid-cols-2">
+              <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-900">教育の柱</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-600">
+                  「グローバル」と「サイエンス」を軸に、GSクラスとGLクラスでそれぞれ難関大学進学を目指すカリキュラムを展開。
+                </p>
+              </article>
+              <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                <h3 class="text-lg font-semibold text-slate-900">学習スタイル</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-600">
+                  反転学習やアクティブラーニング、SSH活動を通じて主体的な学びを促進。SS（芝浦サイエンス）科目で探究型学習を実践。
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="life" class="bg-white py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex items-end justify-between gap-6">
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">学校生活</h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-sky-600">Campus Life</p>
+            </div>
+            <a href="#clubs" class="hidden text-sm font-semibold text-sky-600 hover:text-sky-700 sm:inline-flex"
+              >部活動をチェック</a
+            >
+          </div>
+
+          <div class="mt-12 grid gap-8 lg:grid-cols-3">
+            <article class="rounded-2xl border border-slate-200 bg-sky-50/60 p-6">
+              <h3 class="text-lg font-semibold text-slate-900">授業</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                主要5教科から副教科、SSHまで。各授業スタイルやDMM英会話などの取り組みを紹介予定。
+              </p>
+            </article>
+            <article class="rounded-2xl border border-slate-200 bg-yellow-50/60 p-6">
+              <h3 class="text-lg font-semibold text-slate-900">SSプログラム</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                芝浦サイエンス（SS）の授業構成、グループワークの様子、アクティブラーニングの実例をまとめます。
+              </p>
+            </article>
+            <article class="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 class="text-lg font-semibold text-slate-900">内部進学</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                中入生と高入生の比率やクラス構成、進路実績のサマリーを整理予定。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="clubs" class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-10 lg:grid-cols-[0.35fr,1fr]">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900">部活動</h2>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-sky-600">Clubs &amp; Circles</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2">
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-base font-semibold text-slate-900">運動部</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                ラグビー部、サッカー部、バレー部など多数の運動部が活躍。活動日数や実績、マネージャー情報を掲載予定。
+              </p>
+            </article>
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-base font-semibold text-slate-900">文化部・サークル</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                吹奏楽部、鉄道研究部、軽音学部など多彩な文化部を紹介。展示・発表の見どころや最新トピックを整理します。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="bg-slate-900 py-16 text-slate-50">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 class="text-2xl font-bold">年間行事</h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-sky-300">Annual Events</p>
+            </div>
+            <p class="max-w-xl text-sm text-slate-300">
+              球技大会や研修旅行、合唱祭、芸術鑑賞会など年間イベントのハイライトを季節ごとに整理します。
+            </p>
+          </div>
+          <div class="mt-12 grid gap-6 md:grid-cols-2">
+            <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 class="text-lg font-semibold">高校イベント</h3>
+              <ul class="mt-4 space-y-2 text-sm text-slate-200">
+                <li>・球技大会</li>
+                <li>・研修旅行</li>
+                <li>・海外留学</li>
+                <li>・増穂祭（オープニング／部活企画／エンディング）</li>
+                <li>・芸術鑑賞会</li>
+                <li>・合唱祭</li>
+              </ul>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-white/5 p-6">
+              <h3 class="text-lg font-semibold">中学イベント</h3>
+              <ul class="mt-4 space-y-2 text-sm text-slate-200">
+                <li>・グリーンスクール</li>
+                <li>・海外語学研修</li>
+                <li>・増穂祭</li>
+                <li>・運動会</li>
+                <li>・芸術鑑賞会</li>
+                <li>・合唱祭</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="facilities" class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-10 lg:grid-cols-[0.5fr,1fr]">
+          <div>
+            <h2 class="text-2xl font-bold text-slate-900">施設紹介</h2>
+            <p class="mt-2 text-sm uppercase tracking-[0.2em] text-sky-600">Facilities</p>
+          </div>
+          <div class="grid gap-6 md:grid-cols-2">
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-base font-semibold text-slate-900">売店 &amp; カフェテ</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                人気メニューや営業時間、混雑のコツなどをカード形式で紹介予定。
+              </p>
+            </article>
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-base font-semibold text-slate-900">学習スペース</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                図書室・自習室の設備や利用シーンの写真ギャラリーを配置できるレイアウト。
+              </p>
+            </article>
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-base font-semibold text-slate-900">体育館</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                大体育館の利用シーンをカルーセルや動画で紹介できるよう余白を確保。
+              </p>
+            </article>
+            <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="text-base font-semibold text-slate-900">その他施設</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                売店・カフェテリア以外のスポットや周辺情報をリストアップ予定。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="media" class="bg-sky-50 py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 class="text-2xl font-bold text-slate-900">動画 &amp; メディア</h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-sky-600">Media</p>
+            </div>
+            <p class="max-w-xl text-sm text-slate-600">
+              在校生によるプロモーション動画や部活ダイジェスト、文化祭ムービーを掲載するための枠組みです。
+            </p>
+          </div>
+          <div class="mt-10 grid gap-6 md:grid-cols-2">
+            <div
+              class="aspect-video overflow-hidden rounded-3xl border border-sky-100 bg-white shadow-lg shadow-sky-100/60"
+            ></div>
+            <div
+              class="aspect-video overflow-hidden rounded-3xl border border-sky-100 bg-white shadow-lg shadow-sky-100/60"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between"
+      >
+        <p>© 2025 Shibaura Institute of Technology Kashiwa.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-sky-600">お問い合わせ</a>
+          <a href="#" class="hover:text-sky-600">プライバシー</a>
+        </div>
+      </div>
+    </footer>
+    <script src="site.js"></script>
+  </body>
+</html>

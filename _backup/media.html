@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>動画・メディア｜芝浦工業大学柏中学高等学校 増穂祭サイト</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        font-feature-settings: "palt";
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header class="sticky top-0 z-50 bg-slate-50/80 backdrop-blur border-b border-slate-200">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="index.html" class="flex items-center gap-2">
+          <span class="text-2xl font-bold text-sky-500">Masuo Fes</span>
+        </a>
+        <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-600 md:flex">
+          <a href="about.html" class="transition hover:text-sky-600">学校概要</a>
+          <a href="life.html" class="transition hover:text-sky-600">学校生活</a>
+          <a href="events.html" class="transition hover:text-sky-600">行事</a>
+          <a href="facilities.html" class="transition hover:text-sky-600">施設</a>
+          <a href="media.html" class="transition hover:text-sky-600">動画</a>
+        </nav>
+        <button
+          class="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-sky-400 hover:text-sky-500 md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          メニュー
+        </button>
+      </div>
+      <div id="mobile-menu" class="fixed inset-0 z-40 hidden md:hidden" aria-hidden="true">
+        <div class="absolute inset-0 bg-slate-900/50" data-menu-overlay></div>
+        <nav
+          class="absolute inset-x-4 top-4 rounded-3xl bg-white px-5 pb-10 pt-20 shadow-2xl"
+          role="dialog"
+          aria-modal="true"
+        >
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-bold text-sky-500">Moshio Fes</span>
+            <button
+              class="rounded-full border border-slate-300 p-2 text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+              aria-label="メニューを閉じる"
+              data-menu-close
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path
+                  fill-rule="evenodd"
+                  d="M4.22 4.22a.75.75 0 0 1 1.06 0L10 8.94l4.72-4.72a.75.75 0 1 1 1.06 1.06L11.06 10l4.72 4.72a.75.75 0 1 1-1.06 1.06L10 11.06l-4.72 4.72a.75.75 0 0 1-1.06-1.06L8.94 10 4.22 5.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
+          <ul class="mt-8 flex flex-col gap-3 text-base font-semibold text-slate-800">
+            <li>
+              <a href="about.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >学校概要</a
+              >
+            </li>
+            <li>
+              <a href="life.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >学校生活</a
+              >
+            </li>
+            <li>
+              <a href="events.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >行事</a
+              >
+            </li>
+            <li>
+              <a href="facilities.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100"
+                >施設</a
+              >
+            </li>
+            <li>
+              <a href="media.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-sky-100">動画</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden bg-gradient-to-br from-sky-200 via-white to-sky-100 py-20">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-10 lg:grid-cols-[0.4fr,1fr] lg:items-center">
+            <div class="space-y-6">
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-slate-700 shadow"
+              >
+                Media
+              </span>
+              <h1 class="text-3xl font-black leading-tight text-slate-900 sm:text-5xl">
+                映像と音で味わう増穂祭アーカイブ
+              </h1>
+              <p class="text-lg leading-relaxed text-slate-600">
+                プロモーションムービー・部活動ダイジェスト・当日のライブ配信など、マルチメディア資産をまとめるページです。外部サービスへのリンクもここに集約します。
+              </p>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-xl shadow-sky-100/60">
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-slate-500">Featured Slots</p>
+              <ul class="mt-4 space-y-3 text-sm text-slate-600">
+                <li>・オープニングムービー</li>
+                <li>・部活動ショート（吹奏楽／軽音／鉄道研究部）</li>
+                <li>・エンディング拡張ライブ</li>
+                <li>・来場者向けアクセス動画</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-8 md:grid-cols-2">
+          <article class="space-y-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="aspect-video rounded-2xl bg-slate-900/70"></div>
+            <h2 class="text-lg font-semibold text-slate-900">プロモーションムービー</h2>
+            <p class="text-sm leading-6 text-slate-600">文化祭紹介映像や学校説明会のハイライトを埋め込み可能。</p>
+          </article>
+          <article class="space-y-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="aspect-video rounded-2xl bg-sky-900/70"></div>
+            <h2 class="text-lg font-semibold text-slate-900">部活動ダイジェスト</h2>
+            <p class="text-sm leading-6 text-slate-600">吹奏楽部・軽音学部・演劇部などステージ企画の動画をまとめる。</p>
+          </article>
+          <article class="space-y-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="aspect-video rounded-2xl bg-yellow-500/60"></div>
+            <h2 class="text-lg font-semibold text-slate-900">エンディング拡張</h2>
+            <p class="text-sm leading-6 text-slate-600">夜のライブ映像やセットリスト、出演バンド紹介を追加予定。</p>
+          </article>
+          <article class="space-y-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="aspect-video rounded-2xl bg-slate-800/60"></div>
+            <h2 class="text-lg font-semibold text-slate-900">アクセスガイド</h2>
+            <p class="text-sm leading-6 text-slate-600">
+              駅からのルート案内、バス乗車マナーなどを動画／360°コンテンツで掲載。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="bg-white py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="space-y-6">
+            <h2 class="text-xl font-bold text-slate-900">ダウンロード素材</h2>
+            <div class="grid gap-6 md:grid-cols-3">
+              <a
+                href="#"
+                class="rounded-2xl border border-slate-200 bg-white px-6 py-4 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-sky-400 hover:text-sky-600"
+                >ロゴ &amp; キービジュアル</a
+              >
+              <a
+                href="#"
+                class="rounded-2xl border border-slate-200 bg-white px-6 py-4 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-sky-400 hover:text-sky-600"
+                >プレスリリース PDF</a
+              >
+              <a
+                href="#"
+                class="rounded-2xl border border-slate-200 bg-white px-6 py-4 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-sky-400 hover:text-sky-600"
+                >公式SNSリンク集</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between"
+      >
+        <p>© 2025 Moshio Fes / Shibaura Institute of Technology Kashiwa.</p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-sky-600">お問い合わせ</a>
+          <a href="#" class="hover:text-sky-600">プライバシー</a>
+        </div>
+      </div>
+    </footer>
+    <script src="site.js"></script>
+  </body>
+</html>

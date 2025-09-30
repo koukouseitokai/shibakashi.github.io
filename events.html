@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="芝浦工業大学柏中学高等学校の年間行事。増穂祭、球技大会、芸術鑑賞会、修学旅行など、充実した学校行事で生徒の成長と思い出作りをサポートします。" />
+    <title>行事｜芝柏ライフ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/site.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-lg">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 min-h-[64px]">
+        <a
+          href="index.html"
+          class="site-logo flex items-center gap-2 text-sm font-semibold tracking-[0.25em] text-slate-700 uppercase"
+        >
+          <span>芝柏ライフ</span>
+        </a>
+        <nav
+          class="hidden md:inline-flex gap-6 text-[0.95rem] font-semibold text-slate-600"
+          aria-label="メインメニュー"
+        >
+          <a href="about.html" class="transition hover:text-cyan-600">学校概要</a>
+          <a href="life.html" class="transition hover:text-cyan-600">学校生活</a>
+          <a href="events.html" class="transition hover:text-cyan-600">行事</a>
+          <a href="facilities.html" class="transition hover:text-cyan-600">施設</a>
+          <a href="media.html" class="transition hover:text-cyan-600">動画</a>
+        </nav>
+        <button
+          class="md:hidden mt-1.5 inline-flex items-center justify-center rounded-full text-slate-800 p-2 text-sm font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-toggle
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-0 z-[90] hidden" aria-hidden="true">
+      <div class="menu-overlay absolute inset-0 bg-slate-900/70" data-menu-overlay></div>
+      <nav
+        class="absolute inset-x-4 top-6 rounded-3xl bg-white px-5 pb-10 pt-5 shadow-2xl"
+        role="dialog"
+        aria-modal="true"
+        data-menu-panel
+      >
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-semibold tracking-[0.2em] text-slate-500">MENU</span>
+          <button
+            class="rounded-full border border-slate-300 p-2 text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+            aria-label="メニューを閉じる"
+            data-menu-close
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path
+                fill-rule="evenodd"
+                d="M4.22 4.22a.75.75 0 0 1 1.06 0L10 8.94l4.72-4.72a.75.75 0 1 1 1.06 1.06L11.06 10l4.72 4.72a.75.75 0 1 1-1.06 1.06L10 11.06l-4.72 4.72a.75.75 0 0 1-1.06-1.06L8.94 10 4.22 5.28a.75.75 0 0 1 0-1.06Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <ul class="mt-6 flex flex-col gap-3 text-base font-semibold text-slate-800">
+          <li>
+            <a href="index.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >トップページ</a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >学校概要</a
+            >
+          </li>
+          <li>
+            <a href="life.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >学校生活</a
+            >
+          </li>
+          <li>
+            <a href="events.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100">行事</a>
+          </li>
+          <li>
+            <a href="facilities.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100"
+              >施設</a
+            >
+          </li>
+          <li>
+            <a href="media.html" class="block rounded-2xl bg-slate-100 px-4 py-3 transition hover:bg-cyan-100">動画</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="pt-16">
+      <section class="relative overflow-hidden bg-yellow-50 py-20">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-10 md:grid-cols-[1fr,0.5fr] md:items-center">
+            <div class="space-y-6">
+              <span
+                class="inline-flex items-center gap-2 rounded-full bg-yellow-600 px-4 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-white shadow"
+              >
+                Annual Events
+              </span>
+              <h1 class="text-3xl font-black leading-tight text-slate-900 sm:text-5xl">芝柏の一年</h1>
+              <p class="text-lg leading-relaxed text-slate-600">
+                一年を通じて充実した行事が盛りだくさん。芝柏生の熱い青春の1ページをご紹介します。
+              </p>
+            </div>
+            <div class="rounded-3xl border border-yellow-300 bg-white/80 p-6 shadow-sm shadow-yellow-100">
+              <p class="text-sm uppercase tracking-[0.2em] text-cyan-600">Timeline</p>
+              <ol class="mt-4 space-y-3 text-sm text-slate-600">
+                <li><a href="#may" class="hover:text-cyan-600 transition">1. 5月：球技大会・グリーンスクール</a></li>
+                <li><a href="#june" class="hover:text-cyan-600 transition">2. 6月：高校研修旅行・中学研修旅行</a></li>
+                <li><a href="#july-august" class="hover:text-cyan-600 transition">3. 7-8月：語学留学</a></li>
+                <li><a href="#october" class="hover:text-cyan-600 transition">4. 10月：増穂祭</a></li>
+                <li><a href="#november" class="hover:text-cyan-600 transition">5. 11月：芸術鑑賞会</a></li>
+                <li><a href="#december" class="hover:text-cyan-600 transition">6. 12月：合唱祭</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5月 -->
+      <section id="may" class="bg-white py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 lg:grid-cols-[0.3fr,1fr]">
+            <div>
+              <h2
+                class="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-cyan-600 leading-none"
+              >
+                05
+              </h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">May</p>
+            </div>
+            <div class="space-y-8">
+              <!-- 球技大会 -->
+              <article class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">球技大会</h3>
+                  <p class="text-sm font-semibold text-cyan-600">高校生</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    なぜか入学直後にあり、団結力がまだない1年生は百戦錬磨の3年生と戦わされることになる。サッカーやソフトボール、テニス、バスケ、バレー、卓球といったメジャーなスポーツの中に、本校の教員が開発した「キャッチ・ザ・ディスク」という謎競技が紛れ込んでいる。だが、この競技はみんな慣れてないため一年生でも逆転の目がある。意外と良いバランス調整になっているのだ。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/450?random=11"
+                    alt="球技大会"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+
+              <!-- グリーンスクール -->
+              <article class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">グリーンスクール</h3>
+                  <p class="text-sm font-semibold text-cyan-600">中学2年生</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    2泊3日で福島に行く。芝浦工大柏中学の林間学校枠である。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/450?random=12"
+                    alt="グリーンスクール"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6月 -->
+      <section id="june" class="bg-slate-50 py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 lg:grid-cols-[0.3fr,1fr]">
+            <div>
+              <h2
+                class="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-cyan-600 leading-none"
+              >
+                06
+              </h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">June</p>
+            </div>
+            <div class="space-y-8">
+              <!-- 高校研修旅行 -->
+              <article class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">高校研修旅行</h3>
+                  <p class="text-sm font-semibold text-cyan-600">高校2年生</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    研修旅行は基本的にほぼ全員が参加するが、その他に本校の国際部が企画する任意参加のプログラムが存在する。行き先はアイスランドやイギリス、アメリカなど様々である。他にも、不定期でベトナムへ行くプログラムが持ち上がったりする。はっきりいって定期的に行われるプログラムが70万とか80万とかかかるのに対し、不定期のプログラムは10万以内で済んだりするコスパが爆発しているものもあるので、海外研修のお知らせは随時確認することをおすすめしたい。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/450?random=13"
+                    alt="高校研修旅行"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+
+              <!-- 中学研修旅行 -->
+              <article class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">中学研修旅行</h3>
+                  <p class="text-sm font-semibold text-cyan-600">中学3年生</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    中学3年生の6月にニュージーランドに1週間ホームステイをする。全員行くことになるので、英語ができないと何もできずに帰ってくることになる。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/450?random=14"
+                    alt="中学研修旅行"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7-8月 -->
+      <section id="july-august" class="bg-white py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 lg:grid-cols-[0.3fr,1fr]">
+            <div>
+              <h2
+                class="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-cyan-600 leading-none"
+              >
+                07.08
+              </h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">July. August</p>
+            </div>
+            <div class="space-y-8">
+              <!-- 語学留学 -->
+              <article class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">語学留学</h3>
+                  <p class="text-sm font-semibold text-cyan-600">中高一貫</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    研修旅行は基本的にほぼ全員が参加するが、その他に本校の国際部が企画する任意参加のプログラムが存在する。行き先はアイスランドやイギリス、アメリカなど様々である。他にも、不定期でベトナムへ行くプログラムが持ち上がったりする。はっきりいって定期的に行われるプログラムが70万とか80万とかかかるのに対し、不定期のプログラムは10万以内で済んだりするコスパが爆発しているものもあるので、海外研修のお知らせは随時確認することをおすすめしたい。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/450?random=15"
+                    alt="語学留学"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10月 増穂祭 -->
+      <section id="october" class="bg-gradient-to-r from-cyan-50 to-yellow-50 py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 lg:grid-cols-[0.3fr,1fr]">
+            <div>
+              <h2
+                class="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-cyan-600 leading-none"
+              >
+                10
+              </h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">October</p>
+            </div>
+            <div class="space-y-8">
+              <!-- 増穂祭 -->
+              <article class="space-y-6">
+                <div class="space-y-4">
+                  <h3 class="text-3xl font-bold text-slate-900">増穂祭</h3>
+                  <p class="text-sm font-semibold text-cyan-600">中高一貫</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    芝柏の一大イベントと言っても過言ではない増穂祭。クラスの出し物では、食品部門、販売部門、体験部門の３つ分類される。コロナ禍を経て、全てがパワーアップして帰ってきた。昨年の増穂祭では、来場者数5425人という過去最高来場者数を記録した増穂祭、ぜひ一度は足を運んでいただきたい。
+                  </p>
+                </div>
+
+                <!-- 増穂祭特集バナー -->
+                <a
+                  href="masuhofes.html"
+                  class="block group relative overflow-hidden rounded-2xl bg-gradient-to-r from-cyan-600 to-indigo-600 p-8 text-white shadow-xl hover:shadow-2xl transition-all duration-300"
+                >
+                  <div class="relative z-10">
+                    <div class="flex items-center justify-between">
+                      <div>
+                        <p class="text-sm font-semibold uppercase tracking-wider opacity-90">Special Feature</p>
+                        <h3 class="mt-2 text-2xl font-bold">増穂祭特集ページ</h3>
+                        <p class="mt-2 text-sm opacity-90">芝柏最大のイベントを特集でお届け</p>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-12 w-12 opacity-80 group-hover:translate-x-2 transition-transform"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.293l-3-3a1 1 0 00-1.414 1.414L10.586 9.5H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <!-- 装飾的な背景パターン -->
+                  <div class="absolute inset-0 opacity-10">
+                    <div class="absolute -top-12 -right-12 h-48 w-48 rounded-full bg-white"></div>
+                    <div class="absolute -bottom-12 -left-12 h-48 w-48 rounded-full bg-white"></div>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11月 -->
+      <section id="november" class="bg-white py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 lg:grid-cols-[0.3fr,1fr]">
+            <div>
+              <h2
+                class="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-cyan-600 leading-none"
+              >
+                11
+              </h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">November</p>
+            </div>
+            <div class="space-y-8">
+              <!-- 芸術鑑賞会 -->
+              <article class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">芸術鑑賞会</h3>
+                  <p class="text-sm font-semibold text-cyan-600">中高一貫</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    '24年度は歌舞伎座で歌舞伎を見て、'25年度は劇団四季の演劇を見る予定である。このように、芸術鑑賞会は西東京のあたりが会場になるので、正直生徒は芸術鑑賞会自体よりもその後の東京観光を主目的にしている。教員も（悔しいのかもしれないが）その事実を認めている。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/450?random=16"
+                    alt="芸術鑑賞会"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 12月 -->
+      <section id="december" class="bg-slate-50 py-16">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="grid gap-12 lg:grid-cols-[0.3fr,1fr]">
+            <div>
+              <h2
+                class="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-cyan-400 to-cyan-600 leading-none"
+              >
+                12
+              </h2>
+              <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">December</p>
+            </div>
+            <div class="space-y-8">
+              <!-- 合唱祭 -->
+              <article class="grid gap-6 lg:grid-cols-2">
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold text-slate-900">合唱祭</h3>
+                  <p class="text-sm font-semibold text-cyan-600">中高一貫</p>
+                  <p class="text-base leading-7 text-slate-600">
+                    基本的に松戸市民ホールで行われる。たまに学校で行われることもあるので、それに巡り合った君は運が悪い。一部生徒からは合唱祭の代わりに体育祭をやれと言われているが、色々理由があって残っている。当然のごとく3年生はハブられる。お情けとして有志団体が出場できるが、つまりは寄せ集めにならざるを得ない。
+                  </p>
+                </div>
+                <div class="w-full max-w-md mx-auto lg:mx-0">
+                  <img
+                    src="https://picsum.photos/600/450?random=17"
+                    alt="合唱祭"
+                    class="aspect-[4/3] w-full rounded-2xl object-cover"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between"
+      >
+        <p>© 2025 Shibaura Institute of Technology Kashiwa.</p>
+      </div>
+    </footer>
+  </body>
+</html>

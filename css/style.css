@@ -1,0 +1,55 @@
+/* css/style.css
+ * 全ページ共通のスタイル定義
+ * HuiFontP29フォントと基本設定を含む
+ * RELEVANT FILES: index.html, about.html, life.html, events.html
+ */
+
+/* ========================================
+   基本設定
+   ======================================== */
+:root {
+  /* ライトモードを強制指定（ダークモード非対応） */
+  color-scheme: light;
+}
+
+body {
+  /* プロポーショナルメトリクスを有効化（文字間隔の自動調整） */
+  font-feature-settings: "palt";
+  /* 全体的な文字間隔を少し広げて読みやすさを向上 */
+  letter-spacing: 0.1em;
+}
+
+/* ========================================
+   カスタムフォント定義
+   ======================================== */
+@font-face {
+  font-family: "HuiFontP29";
+  src: url("../fonts/HuiFontP29/HuiFontP29.ttf") format("truetype");
+  /* フォント読み込み中は文字を非表示にし、読み込み後に表示 */
+  font-display: block;
+}
+
+/* ========================================
+   サイトロゴのスタイル
+   ======================================== */
+.site-logo span {
+  /* カスタムWebフォントを指定 */
+  font-family: "HuiFontP29";
+  /* ロゴのフォントサイズ */
+  font-size: 32px;
+  /* フォント読み込み前は完全に非表示にする
+     これにより、通常フォントが一瞬表示される問題を防ぐ */
+  opacity: 0;
+  visibility: hidden;
+  /* フォント読み込み完了時のスムーズな表示アニメーション */
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+/* フォント読み込み完了後の表示状態
+   site.jsでfont-hui-readyクラスが追加された時に適用 */
+.font-hui-ready .site-logo span {
+  opacity: 1;
+  visibility: visible;
+}
