@@ -32,6 +32,9 @@
         height: 100%;
     }
     </style>
+    <!-- これをheadのさいごにいれてください -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
     </head>
     <body class="bg-slate-50 text-slate-900">
     <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-lg">
@@ -155,7 +158,7 @@
         </div>
       </section>
       <!-- シバカッシー -->
-      <section id="shibakassy" class="mx-auto max-w-6xl px-4 py-16">
+      <section id="shibakassy" class="mx-auto max-w-6xl px-4 pt-16 pb-20">
         <div class="grid gap-10 lg:grid-cols-[0.4fr,1fr]">
           <div>
             <h2 class="text-2xl font-bold text-slate-900">シバカッシー</h2>
@@ -236,7 +239,7 @@
           </div>
       </section>
       <!-- Unityゲーム埋め込み -->
-      <div class="py-30">
+      <div class="pb-30">
               <div class="game-container"> 
                 <iframe 
                   id="unity-game" 
@@ -250,7 +253,97 @@
                 </iframe>
               </div>
       </div>
-      </main>
+      
+    
+    <!-- これをbodyの中に入れてください -->
+    <section id="quiz" class="mx-auto max-w-6xl px-4 pt-10">
+        <div class="grid gap-10 lg:grid-cols-[0.4fr,1fr]">
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900">クイズ</h2>
+      <p class="mt-2 text-sm uppercase tracking-[0.2em] text-cyan-600">QUIZ</p>
+    </div>
+          <div class="space-y-8">
+            <!-- キャッチコピー -->
+            <p class="text-base leading-7 text-slate-700">
+              芝柏に関するクイズに挑戦して、学校のことをもっと知ろう！ 全5問のクイズで、あなたの芝柏知識を試してみてください。正解数に応じて、あなたの芝柏マスター度がわかります。さあ、チャレンジしてみよう！
+            </p>
+            </div>
+    </section>
+    <!-- メインクイズコンテナ -->
+    <div class="quiz-container py-16">
+        <div class="quiz-area">
+            <!-- プログレス表示 -->
+            <div id="progress" class="progress">1/5</div>
+            
+            <!-- 質問エリア -->
+            <div id="questionScreen" class="question-screen">
+                <div class="question-container">
+                    <div id="question" class="question">質問TextTextTextTextTextText</div>
+                </div>
+                
+                <!-- 選択肢 -->
+                <div class="choices-container">
+                    <button class="choice" id="choice1" onclick="selectAnswer(0)">
+                        <span class="choice-number">1</span>
+                        <span class="choice-text">選択肢Text</span>
+                    </button>
+                    <button class="choice" id="choice2" onclick="selectAnswer(1)">
+                        <span class="choice-number">2</span>
+                        <span class="choice-text">選択肢Text</span>
+                    </button>
+                    <button class="choice" id="choice3" onclick="selectAnswer(2)">
+                        <span class="choice-number">3</span>
+                        <span class="choice-text">選択肢Text</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 完了画面 (クイズ枠内) -->
+            <div id="completionScreen" class="completion-screen" style="display: none;">
+                <div class="completion-content">
+                    <h2>クイズ完了！</h2>
+                    <div class="completion-message">お疲れ様でした！</div>
+                    <button id="reviewButton" class="review-button">振り返り</button>
+                </div>
+            </div>
+
+            <!-- 結果エリア -->
+            <div id="resultScreen" class="result-screen" style="display: none;">
+                <!-- 上半分（暗くした質問エリア） -->
+                <div class="dimmed-question">
+                    <div id="dimmedQuestion" class="dimmed-question-text">質問TextTextTextTextTextText</div>
+                    <div id="resultMark" class="result-mark">○</div>
+                </div>
+                
+                <!-- 下半分（解説エリア） -->
+                <div class="explanation-area">
+                    <button id="nextButton" class="next-button" onclick="nextQuestion()">→</button>
+                    <div class="explanation-content">
+                        <div id="answerLine" class="answer-line">【回答】選択された答えTextText</div>
+                        <div id="correctLine" class="correct-line">【正解】正しい答えTextText</div>
+                        <div id="explanationText" class="explanation-text">解説TextTextTextTextTextTextTextTextTextText</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <!-- 結果ページ -->
+    <div class="grid gap-20 lg:grid-cols-[0.2fr,1fr,0.2fr] pb-16">
+    <div></div>
+    <div id="resultsPage" class="results-page" style="display: none;">
+        <div class="results-content">
+            <h2>クイズ結果</h2>
+            <div id="finalScore" class="score">0/5 問正解</div>
+            <div id="resultsList" class="results-list">
+                <!-- 結果一覧がここに表示される -->
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    </main>
+    <script src="site.js"></script>
     <footer class="border-t border-slate-200 bg-white">
       <div
         class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 py-8 text-sm text-slate-500 sm:flex-row sm:justify-between"
