@@ -1,0 +1,75 @@
+    <!-- これをheadのさいごにいれてください -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+
+    <!-- これをbodyの中に入れてください -->
+    <!-- メインクイズコンテナ -->
+    <main class="quiz-container">
+        <div class="quiz-area">
+            <!-- プログレス表示 -->
+            <div id="progress" class="progress">1/5</div>
+            
+            <!-- 質問エリア -->
+            <div id="questionScreen" class="question-screen">
+                <div class="question-container">
+                    <div id="question" class="question">質問TextTextTextTextTextText</div>
+                </div>
+                
+                <!-- 選択肢 -->
+                <div class="choices-container">
+                    <button class="choice" id="choice1" onclick="selectAnswer(0)">
+                        <span class="choice-number">1</span>
+                        <span class="choice-text">選択肢Text</span>
+                    </button>
+                    <button class="choice" id="choice2" onclick="selectAnswer(1)">
+                        <span class="choice-number">2</span>
+                        <span class="choice-text">選択肢Text</span>
+                    </button>
+                    <button class="choice" id="choice3" onclick="selectAnswer(2)">
+                        <span class="choice-number">3</span>
+                        <span class="choice-text">選択肢Text</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 完了画面 (クイズ枠内) -->
+            <div id="completionScreen" class="completion-screen" style="display: none;">
+                <div class="completion-content">
+                    <h2>クイズ完了！</h2>
+                    <div class="completion-message">お疲れ様でした！</div>
+                    <button id="reviewButton" class="review-button">振り返り</button>
+                </div>
+            </div>
+
+            <!-- 結果エリア -->
+            <div id="resultScreen" class="result-screen" style="display: none;">
+                <!-- 上半分（暗くした質問エリア） -->
+                <div class="dimmed-question">
+                    <div id="dimmedQuestion" class="dimmed-question-text">質問TextTextTextTextTextText</div>
+                    <div id="resultMark" class="result-mark">○</div>
+                </div>
+                
+                <!-- 下半分（解説エリア） -->
+                <div class="explanation-area">
+                    <button id="nextButton" class="next-button" onclick="nextQuestion()">→</button>
+                    <div class="explanation-content">
+                        <div id="answerLine" class="answer-line">【回答】選択された答えTextText</div>
+                        <div id="correctLine" class="correct-line">【正解】正しい答えTextText</div>
+                        <div id="explanationText" class="explanation-text">解説TextTextTextTextTextTextTextTextTextText</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 結果ページ -->
+    <div id="resultsPage" class="results-page" style="display: none;">
+        <div class="results-content">
+            <h2>クイズ結果</h2>
+            <div id="finalScore" class="score">0/5 問正解</div>
+            <div id="resultsList" class="results-list">
+                <!-- 結果一覧がここに表示される -->
+            </div>
+        </div>
+    </div>
+    <script src="site.js"></script>
